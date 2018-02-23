@@ -1,0 +1,13 @@
+@import 'utils';
+
+.jumbo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 27rem;
+  padding-top: 5rem;
+
+  background-color: $oc-gray-3;
+}

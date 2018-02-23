@@ -1,0 +1,15 @@
+@import "utils";
+
+.jumbo-group-area {
+
+  section {
+    margin: 2rem;
+    width: 10rem;
+    transform: translateY(50%);
+
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 200;
+    color: $oc-gray-7;
+  }
+}

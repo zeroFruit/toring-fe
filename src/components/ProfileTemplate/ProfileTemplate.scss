@@ -1,0 +1,23 @@
+@import "utils";
+
+.profile {
+  flex-direction: column;
+  section {
+    padding: 0 10rem;
+
+    h2 {
+      font-weight: 300;
+      font-size: 2rem;
+      color: $oc-gray-7;
+    }
+
+    p {
+      max-width: 505px;
+    }
+  }
+  .profile-image {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 72px;
+  }
+}

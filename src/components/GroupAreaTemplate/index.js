@@ -1,0 +1,1 @@
+export { default as GroupAreaTemplate } from './GroupAreaTemplate';

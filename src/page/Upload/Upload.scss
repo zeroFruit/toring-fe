@@ -1,0 +1,12 @@
+.upload-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  section {
+    align-self: stretch;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}

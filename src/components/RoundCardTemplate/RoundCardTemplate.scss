@@ -1,0 +1,15 @@
+@import "utils";
+
+.round-card {
+  border-radius: 57.5px;
+  overflow: hidden;
+  width: 115px;
+  height: 115px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+  }
+}

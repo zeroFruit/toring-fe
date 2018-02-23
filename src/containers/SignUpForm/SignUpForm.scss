@@ -1,0 +1,58 @@
+@import 'utils';
+
+.signup-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+
+  transform: translateY(-3rem);
+
+  background-color: $oc-gray-1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $oc-gray-1;
+
+    font-size: 3rem;
+
+    margin-bottom: 1rem;
+
+    @include media("<tablet") {
+      font-size: 2.5rem;
+    }
+  }
+  .wrapper {
+    width: 25rem;
+  }
+
+  .error-text {
+    margin: 1rem 0;
+    text-align: center;
+    color: $oc-pink-7;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+
+  section {
+    margin-top: 1.5rem;
+
+    display: flex;
+
+    font-size: .8rem;
+    font-weight: 300;
+  }
+}

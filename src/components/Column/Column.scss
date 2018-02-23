@@ -1,0 +1,12 @@
+@import 'utils';
+
+.col {
+  float: left;
+  &--2 {
+    width: 50%;
+    @include media("<tablet") {
+      width: 100%;
+    }
+  }
+
+}
