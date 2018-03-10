@@ -47,32 +47,31 @@ class HeaderNavBar extends PureComponent {
     }
 }
 
-const LogIn = (props) => (
+const LogIn = ({ handleClick }) => (
     <FlatButton
         style={ styles.login }
         labelStyle={ styles.login }
         label="로그인"
-        onClick={ props.handleClick }
+        onClick={ handleClick }
     />
-)
+);
 
-const LogOut = (props) => (
+const LogOut = ({ handleProfileClick, handleClick }) => (
     <div>
         <FlatButton
             style={ styles.logout }
             labelStyle={ styles.logout }
             label={ localStorage.getItem('email') }
-            onClick={ props.handleProfileClick }
+            onClick={ handleProfileClick }
         />
         <FlatButton
             style={ styles.logout }
             labelStyle={ styles.logout }
             label="로그아웃"
-            onClick={ props.handleClick }
+            onClick={ handleClick }
         />
     </div>
-
-)
+);
 
 const styles = {
     AppBar: {
@@ -100,3 +99,13 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(compose(RouteHOC, SignOutHOC)(HeaderNavBar));
+
+/*
+* const hoc1 =
+* const hoc2 =
+* const App
+*
+* export default hoc2(hoc1(App));
+* export default compose(hoc2, hoc1)(App);
+*
+* */

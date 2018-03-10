@@ -85,8 +85,8 @@ class Works extends PureComponent {
                                     <WorkMainSectionTitle title="삽화가"/>
                                     <CardGrid
                                         Card={ GridCardTemplate }
-                                        CardBody={ CardBody }
-                                        cardProps={ tilesData } />
+                                        cardProps={ tilesData }
+                                    />
                                 </div>
                             </Column>
                         </div>
