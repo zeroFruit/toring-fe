@@ -45,13 +45,8 @@ const tabProps = [
     }
 ];
 
-const a = {
-    title: '~~',
-    subtitle: 'sub'
-};
-
-const ListTitle = (a) => (
-    <div>{ a.title }</div>
+const ListTitle = ({ title }) => (
+    <div>{ title }</div>
 );
 
 const CardBody = ({ title, author, rate }) => (
@@ -87,6 +82,14 @@ const listProps = [
         author: 'jill111',
         rate: '1'
     },
+    {
+        id: 4,
+        img: require('../../containers/CardGrid/images/image-template.png'),
+        BodyComponent: CardBody,
+        title: 'Breakfast',
+        author: 'jill111',
+        rate: '1'
+    },
 ];
 
 class Home extends PureComponent {
@@ -102,6 +105,16 @@ class Home extends PureComponent {
                         <div>
                             <HorizontalCardList
                                 Header={ () => <ListTitle title={"토링 추천 동화"} subtitle={"sub"}/> }
+                                Card={GridCardTemplate}
+                                cardProps={listProps}
+                            />
+                            <HorizontalCardList
+                                Header={ () => <ListTitle title={"새로 나온 동화"} subtitle={"sub"}/> }
+                                Card={GridCardTemplate}
+                                cardProps={listProps}
+                            />
+                            <HorizontalCardList
+                                Header={ () => <ListTitle title={"인기 동화"} subtitle={"sub"}/> }
                                 Card={GridCardTemplate}
                                 cardProps={listProps}
                             />
