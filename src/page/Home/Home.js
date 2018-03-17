@@ -117,22 +117,12 @@ class Home extends PureComponent {
                                 cardProps={listProps}
                             />
                             <HorizontalCardList
-<<<<<<< HEAD
                                 Header={ () => <ListTitle title={"새로 나온 동화"} subtitle={"sub"}/> }
-=======
-                                Header={ () => <ListTitle title={"새로 나온 동화"} subtitle={"sub"} /> }
->>>>>>> 8ec60d74a9cb376172cbda80caef4b50f7e7689b
                                 Card={GridCardTemplate}
                                 cardProps={listProps}
                             />
                             <HorizontalCardList
-<<<<<<< HEAD
                                 Header={ () => <ListTitle title={"인기 동화"} subtitle={"sub"}/> }
-                                Card={GridCardTemplate}
-                                cardProps={listProps}
-                            />
-=======
-                                Header={ () => <ListTitle title={"인기 동화"} subtitle={"sub"} /> }
                                 Card={GridCardTemplate}
                                 cardProps={listProps}
                             />
@@ -140,7 +130,6 @@ class Home extends PureComponent {
                               count={5}
                               size={12}
                               color2={'#ffd700'} />
->>>>>>> 8ec60d74a9cb376172cbda80caef4b50f7e7689b
                         </div>
                     </div>
                 </ContentWrapper>
