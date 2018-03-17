@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import ReactStars from 'react-stars'
 import { JumboGroupSlide } from "../../containers";
 import {
     ContentWrapper,
@@ -62,6 +63,13 @@ const CardBody = ({ title, author, rate }) => (
     </div>
 );
 
+const Stars = () => (
+  <ReactStars
+    count={5}
+    size={12}
+    color2={'#ffd700'} />
+);
+
 const listProps = [
     {
         id: 1,
@@ -69,7 +77,7 @@ const listProps = [
         BodyComponent: CardBody,
         title: 'Breakfast',
         author: 'jill111',
-        rate: '1'
+        rate: Stars
     },
     {
         id: 2,
@@ -77,7 +85,7 @@ const listProps = [
         BodyComponent: CardBody,
         title: 'Breakfast',
         author: 'jill111',
-        rate: '1'
+        rate: Stars
     },
     {
         id: 3,
@@ -85,7 +93,7 @@ const listProps = [
         BodyComponent: CardBody,
         title: 'Breakfast',
         author: 'jill111',
-        rate: '1'
+        rate: Stars
     },
 ];
 
@@ -98,14 +106,28 @@ class Home extends PureComponent {
                     slideProps={ slideProps } />
                 <ContentWrapper>
                     <div>
-                        {/*<ContentHeaderTabs tabProps={ tabProps } />*/}
-                        {/*<div>*/}
-                            {/*<HorizontalCardList*/}
-                                {/*Header={ () => <ListTitle title={"토링 추천 동화"} subtitle={"sub"}/> }*/}
-                                {/*Card={GridCardTemplate}*/}
-                                {/*cardProps={listProps}*/}
-                            {/*/>*/}
-                        {/*</div>*/}
+                        <ContentHeaderTabs tabProps={ tabProps } />
+                        <div>
+                            <HorizontalCardList
+                                Header={ () => <ListTitle title={"토링 추천 동화"} subtitle={"sub"}/> }
+                                Card={GridCardTemplate}
+                                cardProps={listProps}
+                            />
+                            <HorizontalCardList
+                                Header={ () => <ListTitle title={"새로 나온 동화"} subtitle={"sub"} /> }
+                                Card={GridCardTemplate}
+                                cardProps={listProps}
+                            />
+                            <HorizontalCardList
+                                Header={ () => <ListTitle title={"인기 동화"} subtitle={"sub"} /> }
+                                Card={GridCardTemplate}
+                                cardProps={listProps}
+                            />
+                            <ReactStars
+                              count={5}
+                              size={12}
+                              color2={'#ffd700'} />
+                        </div>
                     </div>
                 </ContentWrapper>
             </div>
