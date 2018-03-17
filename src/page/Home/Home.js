@@ -98,14 +98,14 @@ class Home extends PureComponent {
                     slideProps={ slideProps } />
                 <ContentWrapper>
                     <div>
-                        <ContentHeaderTabs tabProps={ tabProps } />
-                        <div>
-                            <HorizontalCardList
-                                Header={ () => <ListTitle title={"토링 추천 동화"} subtitle={"sub"}/> }
-                                Card={GridCardTemplate}
-                                cardProps={listProps}
-                            />
-                        </div>
+                        {/*<ContentHeaderTabs tabProps={ tabProps } />*/}
+                        {/*<div>*/}
+                            {/*<HorizontalCardList*/}
+                                {/*Header={ () => <ListTitle title={"토링 추천 동화"} subtitle={"sub"}/> }*/}
+                                {/*Card={GridCardTemplate}*/}
+                                {/*cardProps={listProps}*/}
+                            {/*/>*/}
+                        {/*</div>*/}
                     </div>
                 </ContentWrapper>
             </div>
