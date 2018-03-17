@@ -15,7 +15,8 @@ import {
     SignIn,
     SignUp,
     Upload,
-    Profile
+    Profile,
+    Message
 } from '../../page'
 
 const cx = classNames.bind(styles);
@@ -37,8 +38,9 @@ class RootView extends PureComponent {
                                 <AuthHOC path="/works/upload" redirectPath="/works" Component={ Upload } />
                                  {/*<AuthHOC path="/works/profile" redirectPath="/works" Component={ Profile } />*/}
                                 <Route path="/works/profile" component={ Profile } />
-                                <Route path="/signin" component={ SignIn } />
-                                <Route path="/signup" component={ SignUp } />
+                                <Route path={"/message"} component={Message} />
+                                <Route path="/signin" component={ SignIn }/>
+                                <Route path="/signup" component={ SignUp }/>
                             </Switch>
                         </div>
                     </div>
