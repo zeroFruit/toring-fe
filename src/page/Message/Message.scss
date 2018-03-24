@@ -1,5 +1,12 @@
+@import 'utils';
+
 .message-page {
   background-color: white;
+  min-height: calc(100vh - 3rem);
+
+  display: flex;
+  flex-direction: column;
+
   header {
     background-color: white;
 
@@ -11,5 +18,21 @@
   }
   .container {
     padding: 0 8rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex: 1;
+
+    height: 100%;
+
+    .message-list-container {
+      background-color: $oc-gray-4;
+      align-self: stretch;
+    }
+    .message-detail-container {
+      flex: 1;
+      padding: 2.625rem 1rem 0 1rem;
+    }
   }
 }

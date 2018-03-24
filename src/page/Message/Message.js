@@ -3,7 +3,8 @@ import classNames from 'classnames/bind';
 import styles from './Message.scss';
 import {
     CardList,
-    MessageCard
+    MessageCard,
+    MessageDetail
 } from '../../containers';
 
 const cx = classNames.bind(styles);
@@ -23,10 +24,17 @@ export default class Message extends PureComponent {
                     header
                 </header>
                 <div className={cx('container')}>
-                    <CardList
-                        Card={MessageCard}
-                        cardProps={messageProps}
-                    />
+                    <div className={cx('message-list-container')}>
+                        <CardList
+                            Card={MessageCard}
+                            cardProps={messageProps}
+                        />
+                    </div>
+                    <div className={cx('message-detail-container')}>
+                        <MessageDetail
+                            profileImg={require('./images/profile_img.png')}
+                        />
+                    </div>
                 </div>
             </div>
         );

@@ -1,0 +1,89 @@
+@import 'utils';
+
+.message-detail {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 1.625rem;
+    height: 3.625rem;
+
+    .profile {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .profile-img {
+        height: 3.625rem;
+        width: 3.625rem;
+        border-radius: 1.8125rem;
+      }
+
+      h1 {
+        font-size: 1rem;
+        color: $oc-gray-4;
+        margin-left: 1.125rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.875rem;
+    align-items: center;
+
+    .title {
+      min-height: 8.875rem;
+      padding-top: 1.75rem;
+      padding-bottom: 2.75rem;
+
+      font-size: 2rem;
+      color: #c2c2c2;
+      text-align: center;
+    }
+    .message {
+
+    }
+    .checkbox {
+
+    }
+  }
+
+  .works {
+    display: flex;
+    right: 0;
+  }
+}
+
+.message-detail-count {
+  display: flex;
+  flex-direction: row;
+
+  .count {
+    display: flex;
+    margin-left: 1.5625rem;
+
+    .label {
+      display: flex;
+
+      font-size: .75rem;
+      color: #c2c2c2;
+      width: 2.25rem;
+      margin-right: .6875rem;
+      justify-content: center;
+      align-items: center;
+    }
+    .digit {
+      display: flex;
+
+      font-size: 3.5rem;
+      color: #c2c2c2;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
