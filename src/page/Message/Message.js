@@ -21,8 +21,13 @@ export default class Message extends PureComponent {
         return (
             <div className={cx('message-page')}>
                 <header>
-                    header
+                    <div>
+                        <div>
+
+                        </div>
+                    </div>
                 </header>
+                <hr className={cx('divider')} />
                 <div className={cx('container')}>
                     <div className={cx('message-list-container')}>
                         <CardList
