@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb908ff5-480d-4a51-b8f4-54f84335b306" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/components/FlatButtonTemplate/FlatButtonTemplate.js" afterPath="$PROJECT_DIR$/src/components/FlatButtonTemplate/FlatButtonTemplate.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MessageDetail/MessageDetail.js" afterPath="$PROJECT_DIR$/src/containers/MessageDetail/MessageDetail.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/MessageDetail/MessageDetail.scss" afterPath="$PROJECT_DIR$/src/containers/MessageDetail/MessageDetail.scss" />
+      <change beforePath="$PROJECT_DIR$/src/components/ViewTemplate/ViewTemplate.scss" afterPath="$PROJECT_DIR$/src/components/ViewTemplate/ViewTemplate.scss" />
       <change beforePath="$PROJECT_DIR$/src/page/Message/Message.js" afterPath="$PROJECT_DIR$/src/page/Message/Message.js" />
       <change beforePath="$PROJECT_DIR$/src/page/Message/Message.scss" afterPath="$PROJECT_DIR$/src/page/Message/Message.scss" />
     </list>
@@ -25,9 +23,11 @@
           <file leaf-file-name="Message.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/page/Message/Message.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="36">
-                  <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-                  <folding />
+                <state relative-caret-position="509">
+                  <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#0#44#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -105,8 +105,8 @@
           <file leaf-file-name="Message.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/page/Message/Message.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="439">
-                  <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+                <state relative-caret-position="198">
+                  <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -199,7 +199,6 @@
         <option value="$PROJECT_DIR$/src/page/SignIn/index.js" />
         <option value="$PROJECT_DIR$/src/page/index.js" />
         <option value="$PROJECT_DIR$/src/containers/RootView/RootView.js" />
-        <option value="$PROJECT_DIR$/src/components/ViewTemplate/ViewTemplate.scss" />
         <option value="$PROJECT_DIR$/src/containers/RootView/RootView.scss" />
         <option value="$PROJECT_DIR$/src/page/Works/Works.scss" />
         <option value="$PROJECT_DIR$/src/page/Works/Works.js" />
@@ -212,6 +211,7 @@
         <option value="$PROJECT_DIR$/src/containers/MessageDetail/MessageDetail.js" />
         <option value="$PROJECT_DIR$/src/containers/MessageDetail/MessageDetail.scss" />
         <option value="$PROJECT_DIR$/src/page/Message/Message.js" />
+        <option value="$PROJECT_DIR$/src/components/ViewTemplate/ViewTemplate.scss" />
         <option value="$PROJECT_DIR$/src/page/Message/Message.scss" />
       </list>
     </option>
@@ -501,12 +501,12 @@
       <workItem from="1521262076104" duration="1045000" />
       <workItem from="1521263133946" duration="6824000" />
       <workItem from="1521529614046" duration="34000" />
-      <workItem from="1521861925966" duration="6223000" />
+      <workItem from="1521861925966" duration="6715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126482000" />
+    <option name="totallyTimeSpent" value="126974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -819,13 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ViewTemplate/ViewTemplate.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/CardList/CardList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -927,16 +920,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/Message/Message.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ViewTemplate/ViewTemplate.scss">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/page/Message/Message.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        <state relative-caret-position="198">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding />
         </state>
       </provider>

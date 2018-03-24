@@ -21,9 +21,12 @@ export default class Message extends PureComponent {
         return (
             <div className={cx('message-page')}>
                 <header>
-                    <div>
-                        <div>
-
+                    <div className={cx('filter-table')}>
+                        <div className={cx('filter')}>
+                            날짜순
+                        </div>
+                        <div className={cx('filter')}>
+                            안 읽은 쪽지
                         </div>
                     </div>
                 </header>

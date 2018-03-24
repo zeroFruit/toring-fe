@@ -9,7 +9,7 @@
 
   header {
     background-color: white;
-
+    height: 2.9375rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -18,6 +18,13 @@
 
     .filter-table {
       display: flex;
+      justify-content: center;
+      align-items: center;
+      .filter {
+        font-size: 1rem;
+        color: #c2c2c2;
+        margin-right: 2.125rem;
+      }
     }
   }
   .divider {
