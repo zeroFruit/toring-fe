@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 
-import { MaterialUIComponent } from '../components';
-import { SignInForm } from "../containers";
+import { MaterialUIComponent } from '../../components/index';
+import { SignInForm } from "../../containers/index";
 
 class SignIn extends PureComponent {
     render() {
