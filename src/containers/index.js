@@ -19,3 +19,4 @@ export * from './ProfileTabs';
 export * from './ContentHeaderTabs';
 export * from './HorizontalCardList';
 export * from './SignUpService';
+export * from './SignInService';

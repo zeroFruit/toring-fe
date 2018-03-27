@@ -1,12 +1,10 @@
 import React from 'react';
-import { compose } from 'recompose';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import RaisedButton from 'material-ui/RaisedButton';
 import _styles from './SignInForm.scss';
 import { MaterialUIComponent } from '../../components';
-import { TradeFormTextField, TradeTabs } from '../index';
-import { SignInHOC } from "../../hocs";
+import { TradeFormTextField } from '../index';
 
 const cx = classNames.bind(_styles);
 
@@ -55,4 +53,4 @@ const styles = {
     }
 }
 
-export default compose(SignInHOC)(SignInForm);
+export default SignInForm;

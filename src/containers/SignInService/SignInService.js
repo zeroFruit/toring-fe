@@ -3,29 +3,28 @@ import PropTypes from 'prop-types';
 import {Map} from "immutable";
 import validator from "validator";
 
-class SignUpService extends PureComponent {
+class SignInService extends PureComponent {
     state = {
         fd: Map({
             email: '',
-            uname: '',
-            pw: '',
-            rpw: ''
+            pw: ''
         }),
         err: Map({
             isErr: false,
             msg: ''
-        }),
+        })
     };
     render() {
         const { fd, err } = this.state;
         const { neterr } = this.props;
 
         return (this.props.render({
-            fd,
-            err: this._getError(err, neterr),
-            submit: this._handleSubmit,
-            handleFdChange: this._handleFdChange
-        }));
+                fd,
+                err: this._getError(err, neterr),
+                handleFdChange: this._handleFdChange,
+                submit: this._handleSubmit,
+            })
+        );
     }
 
     _getError = (err, neterr) => {
@@ -71,14 +70,7 @@ class SignUpService extends PureComponent {
             return false;
         }
 
-        if (!this._isPwEql(fd.get('pw'), fd.get('rpw'))) {
-            this.setState({
-                err: this.state.err
-                    .set('isErr', true)
-                    .set('msg', 'Password is not equal')
-            });
-            return false;
-        }
+        // TODO: 중복확인
 
         this.setState({
             err: this.state.err
@@ -92,11 +84,8 @@ class SignUpService extends PureComponent {
         fd.filter((v, k) => v !== '').size !== fd.size;
     _isEmailValid = em =>
         validator.isEmail(em);
-    _isPwEql = (pw, rpw) =>
-        pw.toString() === rpw.toString();
 }
 
-SignUpService.propTypes = {};
+SignInService.propTypes = {};
 
-export default SignUpService;
-
+export default SignInService;

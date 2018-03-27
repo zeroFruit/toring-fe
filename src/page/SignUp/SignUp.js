@@ -27,6 +27,9 @@ class SignUp extends PureComponent {
             history.push('/signin');
         }
     }
+    componentWillUnmount() {
+        this.props.initsignup();
+    }
     render() {
         return (
             <SignUpService
