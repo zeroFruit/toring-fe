@@ -1,4 +1,3 @@
-export * from './RootView';
 export * from './HeaderTabs';
 export * from './TradeForm';
 export * from './TradeFormTextField';
@@ -20,3 +19,4 @@ export * from './ContentHeaderTabs';
 export * from './HorizontalCardList';
 export * from './SignUpService';
 export * from './SignInService';
+export * from './SignOutService';

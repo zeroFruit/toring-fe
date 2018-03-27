@@ -4,10 +4,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import reducer from './reducers';
 import saga from './sagas';
-import {
-    QuoteCard,
-    RootView
-} from './containers';
+import Root from './page/Root';
 
 
 const sagaMiddleware = createSagaMiddleware();
@@ -22,7 +19,7 @@ class App extends Component {
     render() {
         return (
         <Provider store={ store }>
-            <RootView />
+            <Root />
         </Provider>
         );
     }

@@ -1,51 +1,34 @@
 import React, { PureComponent } from 'react';
 import { compose } from 'recompose';
-import { connect } from 'react-redux';
 import AppBar from 'material-ui/AppBar';
 import FlatButton from 'material-ui/FlatButton';
 
 import { MaterialUIComponent } from '../../components';
 import { HeaderButtonTabs } from '../index';
-import { RouteHOC, SignOutHOC } from "../../hocs";
-import { selectors } from '../../reducers/auth';
+import { RouteHOC, LoaderHOC } from "../../hocs";
 
-class HeaderNavBar extends PureComponent {
-    state = {
-        loggedin: false
-    };
-
-    render() {
-        return (
-            <MaterialUIComponent>
-                <AppBar
-                    style={ styles.AppBar }
-                    titleStyle={ styles.title }
-                    title="Toring"
-                    iconElementRight={
-                        localStorage.getItem('token') ?
-                            <LogOut
-                                handleProfileClick={ this._handleProfileClick }
-                                handleClick={ this._handleSignOut }/> :
-                            <LogIn handleClick={ this._handleSignIn }/>
-                    }
-                    iconElementLeft={ <HeaderButtonTabs /> }
-                />
-            </MaterialUIComponent>
-        )
-    }
-
-    _handleSignIn = () => {
-        this.props.handleRoute({ path: "/signin" });
-    }
-
-    _handleSignOut = async () => {
-        await this.props.handleSignout();
-    }
-
-    _handleProfileClick = () => {
-        this.props.handleRoute({ path: "/works/profile" });
-    }
-}
+const HeaderNavBar = ({ handleRoute, signout }) => {
+    return (
+        <MaterialUIComponent>
+            <AppBar
+                style={ styles.AppBar }
+                titleStyle={ styles.title }
+                title="Toring"
+                iconElementRight={
+                    localStorage.getItem('token') ?
+                        <LogOut
+                            handleProfileClick={ () => handleRoute({ path: "/works/profile" }) }
+                            handleClick={ () => {
+                                console.log('clikc');
+                                signout();
+                            } }/> :
+                        <LogIn handleClick={ () => handleRoute({ path: "/signin" }) }/>
+                }
+                iconElementLeft={ <HeaderButtonTabs /> }
+            />
+        </MaterialUIComponent>
+    );
+};
 
 const LogIn = ({ handleClick }) => (
     <FlatButton
@@ -94,18 +77,5 @@ const styles = {
     }
 };
 
-const mapStateToProps = state => ({
-    signedin: selectors.getSignedIn(state)
-});
 
-export default connect(mapStateToProps)(compose(RouteHOC, SignOutHOC)(HeaderNavBar));
-
-/*
-* const hoc1 =
-* const hoc2 =
-* const App
-*
-* export default hoc2(hoc1(App));
-* export default compose(hoc2, hoc1)(App);
-*
-* */
+export default compose(LoaderHOC, RouteHOC)(HeaderNavBar);
