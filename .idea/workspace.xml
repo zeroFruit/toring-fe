@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb908ff5-480d-4a51-b8f4-54f84335b306" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/containers/DepthTable/DepthTable.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/containers/DepthTable/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/containers/PriceTable/PriceTable.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/containers/PriceTable/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/containers/SignUpForm/SignUpForm.js" afterPath="$PROJECT_DIR$/src/containers/SignUpForm/SignUpForm.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/index.js" afterPath="$PROJECT_DIR$/src/containers/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/hocs/FetchDepthToTableHOC/FetchDepthToTableHOC.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/hocs/FetchDepthToTableHOC/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/hocs/FetchPriceToTableHOC/FetchPriceToTableHOC.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/hocs/FetchPriceToTableHOC/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/hocs/index.js" afterPath="$PROJECT_DIR$/src/hocs/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/page/SignIn.js" afterPath="$PROJECT_DIR$/src/page/SignIn/SignIn.js" />
-      <change beforePath="$PROJECT_DIR$/src/page/SignUp.js" afterPath="$PROJECT_DIR$/src/page/SignUp/SignUp.js" />
-      <change beforePath="$PROJECT_DIR$/src/page/index.js" afterPath="$PROJECT_DIR$/src/page/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/RoundCardTemplate/RoundCardTemplate.js" afterPath="$PROJECT_DIR$/src/components/RoundCardTemplate/RoundCardTemplate.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,8 +21,8 @@
           <file leaf-file-name="RoundCardTemplate.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/components/RoundCardTemplate/RoundCardTemplate.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+                <state relative-caret-position="126">
+                  <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -139,7 +124,6 @@
         <option value="$PROJECT_DIR$/src/containers/JumboProfile/JumboProfile.scss" />
         <option value="$PROJECT_DIR$/src/containers/JumboProfile/JumboProfile.js" />
         <option value="$PROJECT_DIR$/src/containers/CardList/CardList.js" />
-        <option value="$PROJECT_DIR$/src/components/RoundCardTemplate/RoundCardTemplate.js" />
         <option value="$PROJECT_DIR$/src/containers/AuthorProfileCard/AuthorProfileCard.js" />
         <option value="$PROJECT_DIR$/src/components/ProfileTemplate/ProfileTemplate.js" />
         <option value="$PROJECT_DIR$/src/components/ProfileTemplate/ProfileTemplate.scss" />
@@ -186,6 +170,7 @@
         <option value="$PROJECT_DIR$/src/page/SignUp/index.js" />
         <option value="$PROJECT_DIR$/src/hocs/index.js" />
         <option value="$PROJECT_DIR$/src/containers/index.js" />
+        <option value="$PROJECT_DIR$/src/components/RoundCardTemplate/RoundCardTemplate.js" />
       </list>
     </option>
   </component>
@@ -434,7 +419,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112990000" />
+    <option name="totallyTimeSpent" value="113086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -773,7 +758,7 @@
         <state relative-caret-position="252">
           <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -875,8 +860,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/RoundCardTemplate/RoundCardTemplate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="126">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding />
         </state>
       </provider>
