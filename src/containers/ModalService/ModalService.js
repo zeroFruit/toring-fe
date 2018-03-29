@@ -20,16 +20,16 @@ class ModalService extends PureComponent {
                     isOpen={this.state.isModalOpen}
                     onRequestClose={this._maybeRenderModal}
                 >
-                    <ModalComponent />
+                    { ModalComponent ? <ModalComponent /> : <div /> }
                 </ModalTemplate>
             </div>
         );
     }
-    _maybeRenderModal = (ModalComponent = null) => {
+    _maybeRenderModal = (ModalComponent = null, { ...modalProps }) => {
         if(!this.state.isModalOpen) {
             this.setState({
                 isModalOpen: true,
-                ModalComponent
+                ModalComponent: () => <ModalComponent { ...modalProps } />
             });
         } else {
             this.setState({

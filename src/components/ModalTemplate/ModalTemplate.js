@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Modal from 'react-modal';
 
+Modal.setAppElement(document.getElementById('root'));
+
 const styles = {
     overlay: {
         zIndex: 9999,

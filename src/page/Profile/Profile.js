@@ -23,7 +23,11 @@ class Profile extends PureComponent {
         return (
             <div>
                 <ShowMessageButtonService
-                    maybeRenderModal={this.props.maybeRenderModal.bind(this, MessageModalContent)}
+                    maybeRenderModal={
+                        this.props.maybeRenderModal.bind(this, MessageModalContent, {
+                            sendMessage: this._sendMessage
+                        })
+                    }
                     render={() => (
                         <JumboProfile />
                     )}
@@ -33,6 +37,10 @@ class Profile extends PureComponent {
                 </ContentWrapper>
             </div>
         );
+    }
+
+    _sendMessage = () => {
+        console.log('send message');
     }
 }
 

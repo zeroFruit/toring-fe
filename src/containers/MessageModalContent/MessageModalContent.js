@@ -9,7 +9,7 @@ import {
 
 const cx = classNames.bind(styles);
 
-const MessageModalContent = () => {
+const MessageModalContent = ({ sendMessage }) => {
     return (
         <div className={cx('message-modal-content')}>
             <div className={cx('message-modal-content__title')}>
@@ -44,7 +44,10 @@ const MessageModalContent = () => {
             </div>
             <hr className={cx('divider')}/>
             <div className={cx('message-modal-content__footer')}>
-                <Button label={"보내기"}/>
+                <Button
+                    label={"보내기"}
+                    onClick={sendMessage}
+                />
             </div>
         </div>
     );
