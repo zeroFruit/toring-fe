@@ -1,6 +1,10 @@
 import React, { PureComponent } from 'react';
 import { ContentWrapper } from '../../components';
-import { JumboProfile, ProfileTabs } from '../../containers';
+import {
+    JumboProfile,
+    ProfileTabs,
+    ShowMessageButtonService
+} from '../../containers';
 
 const tabProps = [
     {
@@ -17,7 +21,12 @@ class Profile extends PureComponent {
     render() {
         return (
             <div>
-                <JumboProfile />
+                <ShowMessageButtonService
+                    maybeRenderModal={this.props.maybeRenderModal}
+                    render={() => (
+                        <JumboProfile />
+                    )}
+                />
                 <ContentWrapper>
                     <ProfileTabs tabProps={ tabProps } />
                 </ContentWrapper>

@@ -6,7 +6,7 @@ import classNames from 'classnames/bind';
 import styles from './Root.scss';
 import history from '../history';
 import { ViewTemplate } from '../components';
-import { HeaderNavBar } from '../containers';
+import { HeaderNavBar, ModalService } from '../containers';
 import { AuthHOC } from '../hocs';
 import {actions as wsActions} from '../reducers/ws';
 import {actions as authActions} from '../reducers/auth';
@@ -39,26 +39,32 @@ class Root extends PureComponent {
     }
     render() {
         return (
-            <Router history={ history }>
-                <ViewTemplate
-                    header={<HeaderNavBar
-                        signout={this.props.signout}
-                    />}>
-                    <div className={ cx('root-view') }>
-                        <div>
-                            <Switch>
-                                <Route exact path="/" component={ Home } />
-                                <Route exact path="/works" component={ Works } />
-                                <AuthHOC path="/works/upload" redirectPath="/works" Component={ Upload } />
-                                {/*<AuthHOC path="/works/profile" redirectPath="/works" Component={ Profile } />*/}
-                                <Route path="/works/profile" component={ Profile } />
-                                <Route path="/signin" component={ SignIn } />
-                                <Route path="/signup" component={ SignUp } />
-                            </Switch>
-                        </div>
-                    </div>
-                </ViewTemplate>
-            </Router>
+            <ModalService
+                render={({ maybeRenderModal }) => (
+                    <Router history={ history }>
+                        <ViewTemplate
+                            header={<HeaderNavBar
+                                signout={this.props.signout}
+                            />}>
+                            <div className={ cx('root-view') }>
+                                <div>
+                                    <Switch>
+                                        <Route exact path="/" component={ Home } />
+                                        <Route exact path="/works" component={ Works } />
+                                        <AuthHOC path="/works/upload" redirectPath="/works" Component={ Upload } />
+                                        {/*<AuthHOC path="/works/profile" redirectPath="/works" Component={ Profile } />*/}
+                                        <Route path="/works/profile" render={() => (
+                                            <Profile maybeRenderModal={maybeRenderModal} />
+                                        )} />
+                                        <Route path="/signin" component={ SignIn } />
+                                        <Route path="/signup" component={ SignUp } />
+                                    </Switch>
+                                </div>
+                            </div>
+                        </ViewTemplate>
+                    </Router>
+                )}
+            />
         );
     }
 }
