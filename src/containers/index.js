@@ -22,3 +22,4 @@ export * from './SignInService';
 export * from './SignOutService';
 export * from './ShowMessageButtonService';
 export * from './ModalService';
+export * from './MessageModalContent';

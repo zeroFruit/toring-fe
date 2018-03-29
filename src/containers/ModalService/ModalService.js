@@ -1,20 +1,8 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
-import Modal from 'react-modal';
-
-const modalStyles = {
-    overlay: {
-        zIndex: 9999,
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        backgroundColor: 'rgba(0, 0, 0, 0.5)'
-    },
-    content: {
-    }
-};
+import {
+    ModalTemplate
+} from '../../components';
 
 class ModalService extends PureComponent {
     state = {
@@ -22,19 +10,18 @@ class ModalService extends PureComponent {
         ModalComponent: null
     };
     render() {
+        const { ModalComponent } = this.state;
         return (
             <div>
                 {this.props.render({
                     maybeRenderModal: this._maybeRenderModal
                 })}
-                <Modal
-                    shouldCloseOnOverlayClick
+                <ModalTemplate
                     isOpen={this.state.isModalOpen}
                     onRequestClose={this._maybeRenderModal}
-                    style={modalStyles}
                 >
-                    <div>Test Modal</div>
-                </Modal>
+                    <ModalComponent />
+                </ModalTemplate>
             </div>
         );
     }

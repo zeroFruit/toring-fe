@@ -13,10 +13,12 @@ const styles = {
         backgroundColor: 'rgba(0, 0, 0, 0.5)'
     },
     content: {
+        width: '47.75rem',
+        margin: '0 auto',
     }
 };
 
-const ModalTemplate = ({ isOpen, onRequestClose }) => {
+const ModalTemplate = ({ isOpen, onRequestClose, children }) => {
     return (
         <Modal
             shouldCloseOnOverlayClick
@@ -24,7 +26,7 @@ const ModalTemplate = ({ isOpen, onRequestClose }) => {
             onRequestClose={onRequestClose}
             style={styles}
         >
-            {React.Children.only(this.props.children)}
+            {React.Children.only(children)}
         </Modal>
     );
 }

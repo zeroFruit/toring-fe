@@ -3,7 +3,8 @@ import { ContentWrapper } from '../../components';
 import {
     JumboProfile,
     ProfileTabs,
-    ShowMessageButtonService
+    ShowMessageButtonService,
+    MessageModalContent
 } from '../../containers';
 
 const tabProps = [
@@ -22,7 +23,7 @@ class Profile extends PureComponent {
         return (
             <div>
                 <ShowMessageButtonService
-                    maybeRenderModal={this.props.maybeRenderModal}
+                    maybeRenderModal={this.props.maybeRenderModal.bind(this, MessageModalContent)}
                     render={() => (
                         <JumboProfile />
                     )}
