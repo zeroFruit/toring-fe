@@ -3,7 +3,9 @@ import React, { PureComponent } from 'react';
 const HorizontalCardList = ({ Header = null, Card = null, cardProps = [] }) => (
     <div>
         <div>
-            <Header />
+            {
+              Header ? <Header /> : <div />
+            }
         </div>
         <div>
             {

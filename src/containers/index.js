@@ -20,3 +20,4 @@ export * from './JumboProfile';
 export * from './ProfileTabs';
 export * from './ContentHeaderTabs';
 export * from './HorizontalCardList';
+export * from './AuthorWorkCard';

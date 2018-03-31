@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import ReactStars from 'react-stars'
 import { JumboGroupSlide } from "../../containers";
 import {
     ContentWrapper,
@@ -45,13 +46,8 @@ const tabProps = [
     }
 ];
 
-const a = {
-    title: '~~',
-    subtitle: 'sub'
-};
-
-const ListTitle = (a) => (
-    <div>{ a.title }</div>
+const ListTitle = ({ title }) => (
+    <div>{ title }</div>
 );
 
 const CardBody = ({ title, author, rate }) => (
@@ -62,6 +58,13 @@ const CardBody = ({ title, author, rate }) => (
     </div>
 );
 
+const Stars = () => (
+  <ReactStars
+    count={5}
+    size={12}
+    color2={'#ffd700'} />
+);
+
 const listProps = [
     {
         id: 1,
@@ -69,7 +72,7 @@ const listProps = [
         BodyComponent: CardBody,
         title: 'Breakfast',
         author: 'jill111',
-        rate: '1'
+        rate: Stars
     },
     {
         id: 2,
@@ -77,10 +80,18 @@ const listProps = [
         BodyComponent: CardBody,
         title: 'Breakfast',
         author: 'jill111',
-        rate: '1'
+        rate: Stars
     },
     {
         id: 3,
+        img: require('../../containers/CardGrid/images/image-template.png'),
+        BodyComponent: CardBody,
+        title: 'Breakfast',
+        author: 'jill111',
+        rate: Stars
+    },
+    {
+        id: 4,
         img: require('../../containers/CardGrid/images/image-template.png'),
         BodyComponent: CardBody,
         title: 'Breakfast',
@@ -105,6 +116,20 @@ class Home extends PureComponent {
                                 Card={GridCardTemplate}
                                 cardProps={listProps}
                             />
+                            <HorizontalCardList
+                                Header={ () => <ListTitle title={"새로 나온 동화"} subtitle={"sub"}/> }
+                                Card={GridCardTemplate}
+                                cardProps={listProps}
+                            />
+                            <HorizontalCardList
+                                Header={ () => <ListTitle title={"인기 동화"} subtitle={"sub"}/> }
+                                Card={GridCardTemplate}
+                                cardProps={listProps}
+                            />
+                            <ReactStars
+                              count={5}
+                              size={12}
+                              color2={'#ffd700'} />
                         </div>
                     </div>
                 </ContentWrapper>
