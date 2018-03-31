@@ -4,19 +4,12 @@ import styles from './ContentHeaderTemplate.scss';
 
 const cx = classNames.bind(styles);
 
-class ContentHeaderTemplate extends PureComponent {
-    render() {
-        const { Tab, tabProps, className } = this.props;
-        return (
-            <div className={ cx('content-header', className) }>
-                { this._renderTabs(Tab, tabProps) }
-            </div>
-        );
+const ContentHeaderTemplate = ({Tab, tabProps, className = '', onClick = () => {}}) => (
+  <div className={ cx('content-header'), className }>
+    {
+      tabProps.map((prop, idx) => <Tab key={idx} onClick={onClick} { ...prop} />)
     }
-
-    _renderTabs = (Tab, tabProps) => (
-        tabProps.map((prop, idx) => <Tab key={idx} { ...prop } />)
-    )
-}
+  </div>
+);
 
 export default ContentHeaderTemplate;
