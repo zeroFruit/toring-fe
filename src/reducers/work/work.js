@@ -7,48 +7,49 @@ import {
 } from "../helper";
 
 export const types = {
+    INIT_WORK_API_STAT: createType(['INIT', 'WORK_API_STAT']),
     UPLOAD_WORK: createRequestTypes(['UPLOAD', 'WORK']),
-    INIT_UPLOAD_WORK: createType(['INIT', 'UPLOAD', 'WORK'])
 };
 
 const is = {
-    uploadStat: Map({
+    workApiStat: Map({
         err: false,
         success: false
     })
 };
 
+const initApiStat = {
+    [types.INIT_WORK_API_STAT]: (state, action) => ({
+        ...state,
+        workApiStat: is.workApiStat
+    })
+}
+
 const upload = {
-    [types.INIT_UPLOAD_WORK]: (state, action) => ({
-        ...state,
-        uploadStat: is.uploadStat
-    }),
-    [types.UPLOAD_WORK.REQUEST]: (state, action) => ({
-        ...state,
-    }),
     [types.UPLOAD_WORK.SUCCESS]: (state, action) => ({
         ...state,
-        uploadStat: state.uploadStat
+        workApiStat: state.workApiStat
             .set('err', false)
             .set('success', true)
     }),
     [types.UPLOAD_WORK.FAILURE]: (state, action) => ({
         ...state,
-        uploadStat: state.uploadStat
+        workApiStat: state.workApiStat
             .set('err', true)
             .set('success', false)
     }),
 };
 
 export default createReducer(is, {
+    ...initApiStat,
     ...upload
 });
 
 export const actions = {
+    initWorkApiStat: () => action(types.INIT_WORK_API_STAT),
     upload: (fd) => action(types.UPLOAD_WORK.REQUEST, { fd }),
-    initupload: () => action(types.INIT_UPLOAD_WORK)
 };
 
 export const selectors = {
-    getUploadStat: state => state.work.uploadStat
+    getWorkApiStat: state => state.work.workApiStat
 };

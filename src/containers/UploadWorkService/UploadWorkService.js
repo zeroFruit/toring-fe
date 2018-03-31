@@ -14,11 +14,11 @@ class UploadWorkService extends PureComponent {
 UploadWorkService.propTypes = {};
 
 const mapStateToProps = state => ({
-    uploadStat: selectors.getUploadStat(state)
+    workApiStat: selectors.getWorkApiStat(state)
 })
 const mapDispatchToProps = dispatch => bindActionCreators({
     upload: actions.upload,
-    initupload: actions.initupload
+    initWorkApiStat: actions.initWorkApiStat
 }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(UploadWorkService);

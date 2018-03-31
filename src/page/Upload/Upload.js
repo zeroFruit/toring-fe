@@ -30,15 +30,15 @@ class Upload extends PureComponent {
         })
     };
     componentWillReceiveProps(nextProps) {
-        if (nextProps.uploadStat.get('err')) {
+        if (nextProps.workApiStat.get('err')) {
             console.warn('error in upload work HOC');
         }
-        if (nextProps.uploadStat.get('success')) {
+        if (nextProps.workApiStat.get('success')) {
             history.push('/works');
         }
     }
     componentWillUnmount() {
-        this.props.initupload();
+        this.props.initWorkApiStat();
     }
 
     render() {
@@ -91,11 +91,11 @@ const styl = {
 };
 
 const mapStateToProps = state => ({
-    uploadStat: selectors.getUploadStat(state)
+    workApiStat: selectors.getWorkApiStat(state)
 })
 const mapDispatchToProps = dispatch => bindActionCreators({
     upload: actions.upload,
-    initupload: actions.initupload
+    initWorkApiStat: actions.initWorkApiStat
 }, dispatch);
 
 
