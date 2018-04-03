@@ -1,0 +1,134 @@
+@import 'utils';
+
+.message-detail {
+
+  header {
+    display: flex;
+    justify-content: space-between!important;
+    align-items: center;
+    padding: 0 0 0 1.625rem!important;
+    height: 3.625rem!important;
+
+    .profile {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .profile-img {
+        height: 3.625rem;
+        width: 3.625rem;
+        border-radius: 1.8125rem;
+      }
+
+      h1 {
+        font-size: 1rem;
+        color: $oc-gray-4;
+        margin-left: 1.125rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+
+    .title {
+      min-height: 8.875rem;
+      padding: 1.75rem 2.875rem 2.75rem 2.875rem;
+      font-size: 2rem;
+      color: #c2c2c2;
+      text-align: center;
+    }
+    .message {
+      min-height: 6.3125rem;
+      font-size: 1rem;
+      color: #c2c2c2;
+      padding-top: 1rem;
+      padding-bottom: .8125rem;
+    }
+    .checkbox {
+      display: flex;
+      align-self: stretch;
+    }
+    .divider {
+      width: 100%;
+      border-top: 0.3px solid #c2c2c2;
+      background-color: #c2c2c2;
+    }
+    .footer {
+      display: flex;
+      margin-top: 2.375rem;
+      justify-content: flex-end;
+      align-self: stretch;
+    }
+  }
+
+  .works {
+    display: flex;
+    right: 0;
+  }
+}
+
+.message-detail-count {
+  display: flex;
+  flex-direction: row;
+
+  .count {
+    display: flex;
+    margin-left: 1.5625rem;
+
+    .label {
+      display: flex;
+
+      font-size: .75rem;
+      color: #c2c2c2;
+      width: 2.25rem;
+      margin-right: .6875rem;
+      justify-content: center;
+      align-items: center;
+    }
+    .digit {
+      display: flex;
+
+      font-size: 3.5rem;
+      color: #c2c2c2;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.message-checkbox {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+
+  .label {
+    font-size: 1rem;
+    color: #c2c2c2;
+  }
+
+  .checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .label {
+      font-size: 1rem;
+      color: #c2c2c2;
+      margin-right: .8125rem;
+    }
+
+    img {
+      width: 1rem;
+      height: auto;
+    }
+  }
+}

@@ -23,3 +23,5 @@ export * from './SignOutService';
 export * from './ShowMessageButtonService';
 export * from './ModalService';
 export * from './MessageModalContent';
+export * from './MessageCard';
+export * from './MessageDetail';

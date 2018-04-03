@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb908ff5-480d-4a51-b8f4-54f84335b306" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/containers/MessageModalContent/MessageModalContent.js" afterPath="$PROJECT_DIR$/src/containers/MessageModalContent/MessageModalContent.js" />
       <change beforePath="$PROJECT_DIR$/src/page/Profile/Profile.js" afterPath="$PROJECT_DIR$/src/page/Profile/Profile.js" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/components/ViewTemplate/ViewTemplate.scss" afterPath="$PROJECT_DIR$/src/components/ViewTemplate/ViewTemplate.scss" />
+      <change beforePath="$PROJECT_DIR$/src/page/Message/Message.js" afterPath="$PROJECT_DIR$/src/page/Message/Message.js" />
+      <change beforePath="$PROJECT_DIR$/src/page/Message/Message.scss" afterPath="$PROJECT_DIR$/src/page/Message/Message.scss" />
+>>>>>>> feature/mes
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,6 +23,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <splitter split-orientation="horizontal" split-proportion="0.47411105">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
@@ -38,20 +45,45 @@
                 <state relative-caret-position="26">
                   <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
                   <folding />
+=======
+    <splitter split-orientation="horizontal" split-proportion="0.6354582">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file leaf-file-name="Message.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/page/Message/Message.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="509">
+                  <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#0#44#0" expanded="true" />
+                  </folding>
+>>>>>>> feature/mes
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
           <file leaf-file-name="ModalService.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/containers/ModalService/ModalService.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="342">
                   <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
                   <folding />
+=======
+          <file leaf-file-name="RoundCardTemplate.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/RoundCardTemplate/RoundCardTemplate.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="72">
+                  <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
+                  </folding>
+>>>>>>> feature/mes
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
           <file leaf-file-name="SignIn.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/page/SignIn/SignIn.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -67,21 +99,37 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="828">
                   <caret line="52" column="6" lean-forward="false" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+=======
+          <file leaf-file-name="RoundCardTemplate.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/RoundCardTemplate/RoundCardTemplate.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> feature/mes
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/reducers/message/index.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="90">
                   <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+=======
+          <file leaf-file-name="ProfileTemplate.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/ProfileTemplate/ProfileTemplate.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="36">
+                  <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+>>>>>>> feature/mes
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
           <file leaf-file-name="message.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/reducers/message/message.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -89,21 +137,42 @@
                   <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
+=======
+          <file leaf-file-name="MessageDetail.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/containers/MessageDetail/MessageDetail.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="563">
+                  <caret line="51" column="65" lean-forward="false" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
+                  <folding>
+                    <element signature="e#0#43#0" expanded="true" />
+>>>>>>> feature/mes
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
           <file leaf-file-name="message.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/sagas/message.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
+=======
+          <file leaf-file-name="MessageCard.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/containers/MessageCard/MessageCard.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="72">
+                  <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#43#0" expanded="true" />
+                  </folding>
+>>>>>>> feature/mes
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
           <file leaf-file-name="Profile.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/page/Profile/Profile.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -112,6 +181,14 @@
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
                   </folding>
+=======
+          <file leaf-file-name="MessageCard.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/containers/MessageCard/MessageCard.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+                  <folding />
+>>>>>>> feature/mes
                 </state>
               </provider>
             </entry>
@@ -120,6 +197,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+<<<<<<< HEAD
           <file leaf-file-name="MessageModalContent.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/containers/MessageModalContent/MessageModalContent.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -128,10 +206,19 @@
                   <folding>
                     <element signature="e#0#43#0" expanded="true" />
                   </folding>
+=======
+          <file leaf-file-name="Message.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/page/Message/Message.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+                  <folding />
+>>>>>>> feature/mes
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/reducers/work/index.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -162,10 +249,19 @@
                   <folding>
                     <element signature="e#0#59#0" expanded="true" />
                   </folding>
+=======
+          <file leaf-file-name="MessageDetail.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/containers/MessageDetail/MessageDetail.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1062">
+                  <caret line="59" column="32" lean-forward="false" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+                  <folding />
+>>>>>>> feature/mes
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
           <file leaf-file-name="work.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/sagas/work.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -174,6 +270,14 @@
                   <folding>
                     <element signature="e#0#59#0" expanded="true" />
                   </folding>
+=======
+          <file leaf-file-name="RootView.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/containers/RootView/RootView.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="198">
+                  <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+                  <folding />
+>>>>>>> feature/mes
                 </state>
               </provider>
             </entry>
@@ -194,6 +298,7 @@
       <find>LoginForm</find>
       <find>GridCardTemplate</find>
       <find>HorizontalListTemplate</find>
+<<<<<<< HEAD
       <find>RouteHOC</find>
       <find>LoaderHOC</find>
       <find>UploadWorkHOC</find>
@@ -201,6 +306,10 @@
       <find>initupload</find>
       <find>uploadStat</find>
       <find>getUploadStat</find>
+=======
+      <find>RoundCardTemplate</find>
+      <find>FlatButtonTemplate</find>
+>>>>>>> feature/mes
     </findStrings>
     <replaceStrings>
       <replace>SignInForm</replace>
@@ -215,9 +324,34 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/components/RoundCardTemplate/RoundCardTemplate.js" />
         <option value="$PROJECT_DIR$/src/containers/SignUpService/index.js" />
         <option value="$PROJECT_DIR$/src/page/index.js" />
+=======
+        <option value="$PROJECT_DIR$/src/components/GroupAreaTemplate/GroupAreaTemplate.js" />
+        <option value="$PROJECT_DIR$/src/hocs/SignUpHOC/SignUpHOC.js" />
+        <option value="$PROJECT_DIR$/src/components/GridCardTemplate/GridCardTemplate.js" />
+        <option value="$PROJECT_DIR$/src/page/Works.js" />
+        <option value="$PROJECT_DIR$/src/components/ContentHeaderTemplate/index.js" />
+        <option value="$PROJECT_DIR$/src/components/ProfileTabTemplate/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/ProfileTabs/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/ProfileTabs/ProfileTabs.js" />
+        <option value="$PROJECT_DIR$/src/page/Profile/Profile.js" />
+        <option value="$PROJECT_DIR$/src/components/ContentHeaderTemplate/ContentHeaderTemplate.scss" />
+        <option value="$PROJECT_DIR$/src/components/ContentHeaderTemplate/ContentHeaderTemplate.js" />
+        <option value="$PROJECT_DIR$/src/containers/ProfileTabs/ProfileTabs.scss" />
+        <option value="$PROJECT_DIR$/src/components/ProfileTabTemplate/ProfileTabTemplate.js" />
+        <option value="$PROJECT_DIR$/src/containers/ContentHeaderTabs/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/ContentHeaderTabs/ContentHeaderTabs.scss" />
+        <option value="$PROJECT_DIR$/src/components/ContentTabTemplate/index.js" />
+        <option value="$PROJECT_DIR$/src/components/ContentTabTemplate/ContentTabTemplate.js" />
+        <option value="$PROJECT_DIR$/src/containers/ContentHeaderTabs/ContentHeaderTabs.js" />
+        <option value="$PROJECT_DIR$/src/page/Works/index.js" />
+        <option value="$PROJECT_DIR$/src/components/ContentTabTemplate/ContentTabTemplate.scss" />
+        <option value="$PROJECT_DIR$/src/components/ProfileTabTemplate/ProfileTabTemplate.scss" />
+        <option value="$PROJECT_DIR$/src/containers/HeaderButtonTabs/HeaderButtonTabs.js" />
+>>>>>>> feature/mes
         <option value="$PROJECT_DIR$/src/api.js" />
         <option value="$PROJECT_DIR$/src/containers/SignUpForm/SignUpForm.js" />
         <option value="$PROJECT_DIR$/src/containers/SignInService/index.js" />
@@ -234,6 +368,7 @@
         <option value="$PROJECT_DIR$/src/containers/UploadWorkService/index.js" />
         <option value="$PROJECT_DIR$/src/containers/UploadButton/UploadButton.js" />
         <option value="$PROJECT_DIR$/src/containers/HeaderNavBar/HeaderNavBar.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/hocs/index.js" />
         <option value="$PROJECT_DIR$/src/page/Upload/Upload.js" />
         <option value="$PROJECT_DIR$/src/containers/ShowMessageButtonService/index.js" />
@@ -266,6 +401,35 @@
         <option value="$PROJECT_DIR$/src/sagas/message.js" />
         <option value="$PROJECT_DIR$/src/page/Profile/Profile.js" />
         <option value="$PROJECT_DIR$/src/containers/MessageModalContent/MessageModalContent.js" />
+=======
+        <option value="$PROJECT_DIR$/src/containers/CardGrid/CardGrid.js" />
+        <option value="$PROJECT_DIR$/src/components/Column/index.js" />
+        <option value="$PROJECT_DIR$/src/components/HorizontalListTemplate/index.js" />
+        <option value="$PROJECT_DIR$/src/components/HorizontalListTemplate/HorizontalListTemplate.js" />
+        <option value="$PROJECT_DIR$/src/components/HorizontalCard/HorizontalCardList.js" />
+        <option value="$PROJECT_DIR$/src/components/index.js" />
+        <option value="$PROJECT_DIR$/src/page/Home/Home.js" />
+        <option value="$PROJECT_DIR$/src/page/SignUp/index.js" />
+        <option value="$PROJECT_DIR$/src/page/SignIn/SignIn.js" />
+        <option value="$PROJECT_DIR$/src/page/SignUp/SignUp.js" />
+        <option value="$PROJECT_DIR$/src/page/SignIn/index.js" />
+        <option value="$PROJECT_DIR$/src/page/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/RootView/RootView.js" />
+        <option value="$PROJECT_DIR$/src/containers/RootView/RootView.scss" />
+        <option value="$PROJECT_DIR$/src/page/Works/Works.scss" />
+        <option value="$PROJECT_DIR$/src/page/Works/Works.js" />
+        <option value="$PROJECT_DIR$/src/containers/MessageCard/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/MessageDetail/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/index.js" />
+        <option value="$PROJECT_DIR$/src/containers/MessageCard/MessageCard.scss" />
+        <option value="$PROJECT_DIR$/src/containers/MessageCard/MessageCard.js" />
+        <option value="$PROJECT_DIR$/src/components/FlatButtonTemplate/FlatButtonTemplate.js" />
+        <option value="$PROJECT_DIR$/src/containers/MessageDetail/MessageDetail.js" />
+        <option value="$PROJECT_DIR$/src/containers/MessageDetail/MessageDetail.scss" />
+        <option value="$PROJECT_DIR$/src/page/Message/Message.js" />
+        <option value="$PROJECT_DIR$/src/components/ViewTemplate/ViewTemplate.scss" />
+        <option value="$PROJECT_DIR$/src/page/Message/Message.scss" />
+>>>>>>> feature/mes
       </list>
     </option>
   </component>
@@ -285,6 +449,22 @@
     <option name="width" value="976" />
     <option name="height" value="1050" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -303,7 +483,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+>>>>>>> feature/mes
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,14 +521,38 @@
               <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
               <item name="toring-fe" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="hocs" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="FlatButtonTemplate" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
               <item name="toring-fe" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="GridCardTemplate" type="462c0819:PsiDirectoryNode" />
+>>>>>>> feature/mes
+            </path>
+            <path>
+              <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="toring-fe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="hocs" type="462c0819:PsiDirectoryNode" />
               <item name="LoaderHOC" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="RoundCardTemplate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="toring-fe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ViewTemplate" type="462c0819:PsiDirectoryNode" />
+>>>>>>> feature/mes
             </path>
             <path>
               <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
@@ -371,8 +578,35 @@
               <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
               <item name="toring-fe" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="page" type="462c0819:PsiDirectoryNode" />
               <item name="SignIn" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="MessageCard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="toring-fe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="MessageDetail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="toring-fe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="MessageDetail" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="toring-fe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="RootView" type="462c0819:PsiDirectoryNode" />
+>>>>>>> feature/mes
             </path>
             <path>
               <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
@@ -391,27 +625,60 @@
               <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
               <item name="toring-fe" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="reducers" type="462c0819:PsiDirectoryNode" />
               <item name="message" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="Message" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
               <item name="toring-fe" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile" type="462c0819:PsiDirectoryNode" />
+>>>>>>> feature/mes
+            </path>
+            <path>
+              <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="toring-fe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="reducers" type="462c0819:PsiDirectoryNode" />
               <item name="work" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="SignIn" type="462c0819:PsiDirectoryNode" />
+>>>>>>> feature/mes
             </path>
             <path>
               <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
               <item name="toring-fe" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="sagas" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="SignUp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toring-fe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="toring-fe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="Works" type="462c0819:PsiDirectoryNode" />
+>>>>>>> feature/mes
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+>>>>>>> feature/mes
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -426,13 +693,22 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\containers\MessageModalContent\images" />
       <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\containers\ShowMessageButtonService\images" />
       <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\page\SignUp" />
       <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\page\SignIn" />
       <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\containers" />
+=======
+      <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\page\Message\images" />
+      <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\page\SignUp" />
+      <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\page\SignIn" />
+      <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\containers" />
+      <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\page\Works" />
+>>>>>>> feature/mes
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\containers\MessageDetail\images" />
       <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\components" />
       <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\containers\CardList\images" />
       <recent name="C:\Users\14wnr\Documents\projects\toring-fe\src\containers" />
@@ -480,16 +756,29 @@
       <workItem from="1520556176393" duration="22000" />
       <workItem from="1520649691427" duration="7305000" />
       <workItem from="1520915621169" duration="11000" />
+<<<<<<< HEAD
       <workItem from="1521257766642" duration="1921000" />
       <workItem from="1522136263020" duration="62000" />
       <workItem from="1522197835223" duration="25163000" />
       <workItem from="1522628904260" duration="81000" />
       <workItem from="1522748285467" duration="1567000" />
+=======
+      <workItem from="1521257766642" duration="835000" />
+      <workItem from="1521261491684" duration="571000" />
+      <workItem from="1521262076104" duration="1045000" />
+      <workItem from="1521263133946" duration="6824000" />
+      <workItem from="1521529614046" duration="34000" />
+      <workItem from="1521861925966" duration="6715000" />
+>>>>>>> feature/mes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="148094000" />
+=======
+    <option name="totallyTimeSpent" value="126974000" />
+>>>>>>> feature/mes
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
@@ -498,7 +787,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> feature/mes
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -510,7 +804,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -547,6 +840,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/hocs/SignOutHOC/SignOutHOC.js" />
     <entry file="file://$PROJECT_DIR$/src/containers/UploadWorkService/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -818,10 +1112,302 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/reducers/work/work.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="37" column="12" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sagas/work.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/JumboGroupSlide/JumboGroupSlide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sagas/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sagas/quote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/auth/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hocs/AuthHOC/AuthHOC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hocs/SignUpHOC/SignUpHOC.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="100" column="35" lean-forward="true" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" column="44" lean-forward="false" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MaterialUIComponent/MaterialUIComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/HeaderButtonTabs/HeaderButtonTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1239">
+          <caret line="59" column="15" lean-forward="false" selection-start-line="59" selection-start-column="15" selection-end-line="59" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/HeaderNavBar/HeaderNavBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="56" column="2" lean-forward="true" selection-start-line="56" selection-start-column="2" selection-end-line="56" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ContentHeaderTemplate/ContentHeaderTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Column/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/CardGrid/CardGrid.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/HorizontalCardList/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/ContentHeaderTabs/ContentHeaderTabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/GridCardTemplate/GridCardTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/HorizontalCardList/HorizontalCardList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/AuthorProfileCard/AuthorProfileCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/Profile/Profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/SignUp/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="45" lean-forward="false" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/SignUp/SignUp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/SignIn/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="45" lean-forward="true" selection-start-line="0" selection-start-column="45" selection-end-line="0" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/SignIn/SignIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/RootView/RootView.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/Works/Works.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="71" column="28" lean-forward="false" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MessageCard/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="55" lean-forward="true" selection-start-line="0" selection-start-column="55" selection-end-line="0" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MessageDetail/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="59" lean-forward="false" selection-start-line="0" selection-start-column="59" selection-end-line="0" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Column/Column.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/Home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="80" column="6" lean-forward="false" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/Works/Works.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/CardList/CardList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ViewTemplate/ViewTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="26" lean-forward="false" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ProfileTemplate/ProfileTemplate.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/RoundCardTemplate/RoundCardTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/RootView/RootView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+>>>>>>> feature/mes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/sagas/auth.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -848,19 +1434,8 @@
           <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/message/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sagas/message.js">
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/RoundCardTemplate/RoundCardTemplate.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -868,26 +1443,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ProfileTemplate/ProfileTemplate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MessageCard/MessageCard.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/MessageCard/MessageCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+>>>>>>> feature/mes
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/reducers/message/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/containers/MessageDetail/MessageDetail.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1062">
+          <caret line="59" column="32" lean-forward="false" selection-start-line="59" selection-start-column="32" selection-end-line="59" selection-end-column="32" />
+>>>>>>> feature/mes
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/sagas/message.js">
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/FlatButtonTemplate/FlatButtonTemplate.js">
+>>>>>>> feature/mes
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/reducers/message/message.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="584">
           <caret line="84" column="17" lean-forward="false" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/containers/MessageDetail/MessageDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="51" column="65" lean-forward="false" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+>>>>>>> feature/mes
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/components/TextAreaTemplate/TextAreaTemplate.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/page/Message/Message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+>>>>>>> feature/mes
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/containers/MessageModalContent/MessageModalContent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -920,6 +1568,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
           <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/components/ViewTemplate/ViewTemplate.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/Message/Message.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+>>>>>>> feature/mes
           <folding />
         </state>
       </provider>

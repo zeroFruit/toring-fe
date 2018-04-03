@@ -1,4 +1,6 @@
 import React, { PureComponent } from 'react';
+import classNames from 'classnames/bind';
+import styles from './Works.scss';
 import {
     Column,
     GridCardTemplate,
@@ -13,6 +15,7 @@ import {
     ContentHeaderTabs
 } from "../../containers";
 
+const cx = classNames.bind(styles);
 
 const listData = [
     {
@@ -66,7 +69,7 @@ const tabProps = [
 class Works extends PureComponent {
     render() {
         return (
-            <div>
+            <div className={cx('works-page')}>
                 <JumboGroupArea />
                 <ContentWrapper>
                     <div>

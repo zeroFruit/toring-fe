@@ -16,7 +16,7 @@ import {
     SignIn,
     SignUp,
     Upload,
-    Profile
+    Profile, Message
 } from './index';
 import {selectors} from "../reducers/auth";
 
@@ -56,6 +56,7 @@ class Root extends PureComponent {
                                         <Route path="/works/profile" render={() => (
                                             <Profile maybeRenderModal={maybeRenderModal} />
                                         )} />
+                                        <Route path={"/message"} component={Message} />
                                         <Route path="/signin" component={ SignIn } />
                                         <Route path="/signup" component={ SignUp } />
                                     </Switch>
