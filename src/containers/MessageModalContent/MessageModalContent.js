@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
 import styles from './MessageModalContent.scss';
@@ -9,49 +9,61 @@ import {
 
 const cx = classNames.bind(styles);
 
-const MessageModalContent = ({ sendMessage }) => {
-    return (
-        <div className={cx('message-modal-content')}>
-            <div className={cx('message-modal-content__title')}>
-                ‘작가 이름’님의 ‘그림책 이름’에 대해 작업을 요청합니다.
-            </div>
-            <hr className={cx('divider')}/>
-            <div className={cx('message-modal-content__textarea')}>
-                <TextAreaTemplate
-                    rows={10}
-                    rowsMax={10}
-                    underlineShow={false}
-                    hintText={"메세지를 입력해주세요."}
-                    containerStyle={textareaStyles.container}
-                    textareaStyle={textareaStyles.textarea}
-                />
-            </div>
-            <hr className={cx('divider')}/>
-            <div className={cx('message-modal-content__checkbox')}>
-                <Checkbox
-                    label={"Toring과의 계약서 확인"}
-                    check={
+class MessageModalContent extends PureComponent{
+    state = {
+        message: ''
+    };
+    render() {
+        const {
+            sendMessage,
+            message,
+            onChangeMessage,
+        } = this.props;
+        return (
+            <div className={cx('message-modal-content')}>
+                <div className={cx('message-modal-content__title')}>
+                    ‘작가 이름’님의 ‘그림책 이름’에 대해 작업을 요청합니다.
+                </div>
+                <hr className={cx('divider')}/>
+                <div className={cx('message-modal-content__textarea')}>
+                    <TextAreaTemplate
+                        value={message}
+                        onChange={onChangeMessage}
+                        rows={10}
+                        rowsMax={10}
+                        underlineShow={false}
+                        hintText={"메세지를 입력해주세요."}
+                        containerStyle={textareaStyles.container}
+                        textareaStyle={textareaStyles.textarea}
+                    />
+                </div>
+                <hr className={cx('divider')}/>
+                <div className={cx('message-modal-content__checkbox')}>
+                    <Checkbox
+                        label={"Toring과의 계약서 확인"}
+                        check={
                             require('./images/check_default_icon.png')}
-                />
+                    />
+                </div>
+                <hr className={cx('divider')}/>
+                <div className={cx('message-modal-content__checkbox')}>
+                    <Checkbox
+                        label={"수락을 누르면 상대방에게 연락처가 공개됩니다."}
+                        check={
+                            require('./images/check_default_icon.png')}
+                    />
+                </div>
+                <hr className={cx('divider')}/>
+                <div className={cx('message-modal-content__footer')}>
+                    <Button
+                        label={"보내기"}
+                        onClick={sendMessage}
+                    />
+                </div>
             </div>
-            <hr className={cx('divider')}/>
-            <div className={cx('message-modal-content__checkbox')}>
-                <Checkbox
-                    label={"수락을 누르면 상대방에게 연락처가 공개됩니다."}
-                    check={
-                        require('./images/check_default_icon.png')}
-                />
-            </div>
-            <hr className={cx('divider')}/>
-            <div className={cx('message-modal-content__footer')}>
-                <Button
-                    label={"보내기"}
-                    onClick={sendMessage}
-                />
-            </div>
-        </div>
-    );
-};
+        );
+    }
+}
 
 const textareaStyles = {
     container: {

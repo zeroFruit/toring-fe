@@ -25,7 +25,7 @@ class Profile extends PureComponent {
                 <ShowMessageButtonService
                     maybeRenderModal={
                         this.props.maybeRenderModal.bind(this, MessageModalContent, {
-                            sendMessage: this._sendMessage
+                            sendMessage: this._sendMessage,
                         })
                     }
                     render={() => (
