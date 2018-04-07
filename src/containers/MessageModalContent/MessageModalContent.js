@@ -11,13 +11,13 @@ const cx = classNames.bind(styles);
 
 class MessageModalContent extends PureComponent{
     state = {
-        message: ''
+        message: '',
+        isAgree1: false,
+        isAgree2: false,
     };
     render() {
         const {
             sendMessage,
-            message,
-            onChangeMessage,
         } = this.props;
         return (
             <div className={cx('message-modal-content')}>
@@ -27,8 +27,8 @@ class MessageModalContent extends PureComponent{
                 <hr className={cx('divider')}/>
                 <div className={cx('message-modal-content__textarea')}>
                     <TextAreaTemplate
-                        value={message}
-                        onChange={onChangeMessage}
+                        value={this.state.message}
+                        onChange={this._onChangeMessage}
                         rows={10}
                         rowsMax={10}
                         underlineShow={false}
@@ -41,16 +41,22 @@ class MessageModalContent extends PureComponent{
                 <div className={cx('message-modal-content__checkbox')}>
                     <Checkbox
                         label={"Toring과의 계약서 확인"}
-                        check={
-                            require('./images/check_default_icon.png')}
+                        onClick={() => this.setState({ isAgree1: !this.state.isAgree1 })}
+                        check={ !this.state.isAgree1 ?
+                            require('./images/check_default_icon.png') :
+                            require('./images/check_selected_icon.png')
+                        }
                     />
                 </div>
                 <hr className={cx('divider')}/>
                 <div className={cx('message-modal-content__checkbox')}>
                     <Checkbox
                         label={"수락을 누르면 상대방에게 연락처가 공개됩니다."}
-                        check={
-                            require('./images/check_default_icon.png')}
+                        onClick={() => this.setState({ isAgree2: !this.state.isAgree2 })}
+                        check={ !this.state.isAgree2 ?
+                            require('./images/check_default_icon.png') :
+                            require('./images/check_selected_icon.png')
+                        }
                     />
                 </div>
                 <hr className={cx('divider')}/>
@@ -63,6 +69,9 @@ class MessageModalContent extends PureComponent{
             </div>
         );
     }
+
+    _onChangeMessage = e =>
+        this.setState({ message: e.target.value });
 }
 
 const textareaStyles = {

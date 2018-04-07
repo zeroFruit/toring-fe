@@ -7,10 +7,14 @@ import {
 class ModalService extends PureComponent {
     state = {
         isModalOpen: false,
-        ModalComponent: null
+        ModalComponent: null,
+        modalProps: null
     };
     render() {
-        const { ModalComponent } = this.state;
+        const {
+            ModalComponent ,
+            modalProps
+        } = this.state;
         return (
             <div>
                 {this.props.render({
@@ -20,7 +24,7 @@ class ModalService extends PureComponent {
                     isOpen={this.state.isModalOpen}
                     onRequestClose={this._maybeRenderModal}
                 >
-                    { ModalComponent ? <ModalComponent /> : <div /> }
+                    { ModalComponent ? <ModalComponent { ...modalProps } /> : <div /> }
                 </ModalTemplate>
             </div>
         );
@@ -29,12 +33,14 @@ class ModalService extends PureComponent {
         if(!this.state.isModalOpen) {
             this.setState({
                 isModalOpen: true,
-                ModalComponent: () => <ModalComponent { ...modalProps } />
+                ModalComponent: (props) => <ModalComponent { ...props } />,
+                modalProps: { ...modalProps }
             });
         } else {
             this.setState({
                 isModalOpen: false,
-                ModalComponent: null
+                ModalComponent: null,
+                modalProps: null
             });
         }
     }

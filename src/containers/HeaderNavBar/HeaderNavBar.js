@@ -17,7 +17,7 @@ const HeaderNavBar = ({ handleRoute, signout }) => {
                 iconElementRight={
                     localStorage.getItem('token') ?
                         <LogOut
-                            handleProfileClick={ () => handleRoute({ path: "/works/profile" }) }
+                            handleProfileClick={ () => handleRoute({ path: "/works/profile/me" }) }
                             handleClick={ () => {
                                 console.log('clikc');
                                 signout();

@@ -20,6 +20,8 @@ const tabProps = [
 
 class Profile extends PureComponent {
     render() {
+        const { isMyPage } =this.props;
+        console.log(isMyPage);
         return (
             <div>
                 <ShowMessageButtonService

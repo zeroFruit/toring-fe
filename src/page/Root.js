@@ -51,10 +51,23 @@ class Root extends PureComponent {
                                     <Switch>
                                         <Route exact path="/" component={ Home } />
                                         <Route exact path="/works" component={ Works } />
+                                        {/* /works/writer */}
+                                        {/* /works/illu */}
                                         <AuthHOC path="/works/upload" redirectPath="/works" Component={ Upload } />
                                         {/*<AuthHOC path="/works/profile" redirectPath="/works" Component={ Profile } />*/}
-                                        <Route path="/works/profile" render={() => (
-                                            <Profile maybeRenderModal={maybeRenderModal} />
+                                        <Route path="/works/profile/me" render={() => (
+                                            <Profile
+                                                isMyPage
+                                                maybeRenderModal={maybeRenderModal}
+                                                uid={-1}
+                                            />
+                                        )} />
+                                        <Route path="/works/profile/:uid" render={({ match }) => (
+                                            <Profile
+                                                isMyPage={false}
+                                                maybeRenderModal={maybeRenderModal}
+                                                uid={match.params.uid}
+                                            />
                                         )} />
                                         <Route path={"/message"} component={Message} />
                                         <Route path="/signin" component={ SignIn } />
