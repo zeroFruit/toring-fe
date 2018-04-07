@@ -1,4 +1,4 @@
-import { Map } from 'immutable';
+import { Map, List } from 'immutable';
 import {
     createRequestTypes,
     createType,
@@ -9,12 +9,19 @@ import {
 export const types = {
     INIT_WORK_API_STAT: createType(['INIT', 'WORK_API_STAT']),
     UPLOAD_WORK: createRequestTypes(['UPLOAD', 'WORK']),
+    FETCH_WRITES: createRequestTypes(['FETCH', 'WRITES']),
+    FETCH_ILLUSTS: createRequestTypes(['FETCH', 'ILLUSTS']),
 };
 
 const is = {
     workApiStat: Map({
         err: false,
         success: false
+    }),
+    worksOfUser: Map({
+        user: null,
+        writes: List(),
+        illusts: List()
     })
 };
 
@@ -40,6 +47,33 @@ const upload = {
     }),
 };
 
+const fetch = {
+    [types.FETCH_WRITES.SUCCESS]: (state, action) => ({
+        ...state,
+        workApiStat: state.workApiStat
+            .set('err', false)
+            .set('success', true)
+    }),
+    [types.FETCH_WRITES.FAILURE]: (state, action) => ({
+        ...state,
+        workApiStat: state.workApiStat
+            .set('err', true)
+            .set('success', false)
+    }),
+    [types.FETCH_ILLUSTS.SUCCESS]: (state, action) => ({
+        ...state,
+        workApiStat: state.workApiStat
+            .set('err', false)
+            .set('success', true)
+    }),
+    [types.FETCH_ILLUSTS.FAILURE]: (state, action) => ({
+        ...state,
+        workApiStat: state.workApiStat
+            .set('err', true)
+            .set('success', false)
+    }),
+}
+
 export default createReducer(is, {
     ...initApiStat,
     ...upload
@@ -48,8 +82,11 @@ export default createReducer(is, {
 export const actions = {
     initWorkApiStat: () => action(types.INIT_WORK_API_STAT),
     upload: (fd) => action(types.UPLOAD_WORK.REQUEST, { fd }),
+    fetchWrites: ({ uid, token }) => action(types.FETCH_WRITES.REQUEST, { uid, token }),
+    fetchIllusts: ({ uid, token }) => action(types.FETCH_WRITES.REQUEST, { uid, token }),
 };
 
 export const selectors = {
-    getWorkApiStat: state => state.work.workApiStat
+    getWorkApiStat: state => state.work.workApiStat,
+    getWorksOfUser: state => state.work.worksOfUser,
 };

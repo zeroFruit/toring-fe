@@ -5,7 +5,8 @@ import FlatButton from 'material-ui/FlatButton';
 
 import { MaterialUIComponent } from '../../components';
 import { HeaderButtonTabs } from '../index';
-import { RouteHOC, LoaderHOC } from "../../hocs";
+import { LoaderHOC } from "../../hocs";
+import history from '../../history';
 
 const HeaderNavBar = ({ handleRoute, signout }) => {
     return (
@@ -17,11 +18,9 @@ const HeaderNavBar = ({ handleRoute, signout }) => {
                 iconElementRight={
                     localStorage.getItem('token') ?
                         <LogOut
-                            handleProfileClick={ () => handleRoute({ path: "/works/profile/me" }) }
-                            handleClick={ () => {
-                                console.log('clikc');
-                                signout();
-                            } }/> :
+                            onClickWriterWorks={() => history.push("/works/writer/profile/me")}
+                            onClickIllustratorWorks={() => history.push("/works/illustrator/profile/me")}
+                            handleClick={() => signout()}/> :
                         <LogIn handleClick={ () => handleRoute({ path: "/signin" }) }/>
                 }
                 iconElementLeft={ <HeaderButtonTabs /> }
@@ -39,13 +38,19 @@ const LogIn = ({ handleClick }) => (
     />
 );
 
-const LogOut = ({ handleProfileClick, handleClick }) => (
+const LogOut = ({ onClickWriterWorks, onClickIllustratorWorks, handleClick }) => (
     <div>
         <FlatButton
             style={ styles.logout }
             labelStyle={ styles.logout }
-            label={ localStorage.getItem('email') }
-            onClick={ handleProfileClick }
+            label={"글작업실"}
+            onClick={ onClickWriterWorks }
+        />
+        <FlatButton
+            style={ styles.logout }
+            labelStyle={ styles.logout }
+            label={"그림작업실"}
+            onClick={ onClickIllustratorWorks }
         />
         <FlatButton
             style={ styles.logout }
@@ -78,4 +83,4 @@ const styles = {
 };
 
 
-export default compose(LoaderHOC, RouteHOC)(HeaderNavBar);
+export default compose(LoaderHOC)(HeaderNavBar);

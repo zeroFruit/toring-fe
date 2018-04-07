@@ -55,16 +55,38 @@ class Root extends PureComponent {
                                         {/* /works/illu */}
                                         <AuthHOC path="/works/upload" redirectPath="/works" Component={ Upload } />
                                         {/*<AuthHOC path="/works/profile" redirectPath="/works" Component={ Profile } />*/}
-                                        <Route path="/works/profile/me" render={() => (
+                                        <Route path="/works/writer/profile/me" render={() => (
                                             <Profile
                                                 isMyPage
+                                                isWriterPage
+                                                isIlluPage={false}
                                                 maybeRenderModal={maybeRenderModal}
                                                 uid={-1}
                                             />
                                         )} />
-                                        <Route path="/works/profile/:uid" render={({ match }) => (
+                                        <Route path="/works/writer/profile/:uid" render={({ match }) => (
                                             <Profile
                                                 isMyPage={false}
+                                                isWriterPage
+                                                isIlluPage={false}
+                                                maybeRenderModal={maybeRenderModal}
+                                                uid={match.params.uid}
+                                            />
+                                        )} />
+                                        <Route path="/works/illustrator/profile/me" render={() => (
+                                            <Profile
+                                                isMyPage
+                                                isWriterPage={false}
+                                                isIlluPage
+                                                maybeRenderModal={maybeRenderModal}
+                                                uid={-1}
+                                            />
+                                        )} />
+                                        <Route path="/works/illustrator/profile/:uid" render={({ match }) => (
+                                            <Profile
+                                                isMyPage={false}
+                                                isWriterPage={false}
+                                                isIlluPage
                                                 maybeRenderModal={maybeRenderModal}
                                                 uid={match.params.uid}
                                             />

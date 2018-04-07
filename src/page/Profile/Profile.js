@@ -19,6 +19,13 @@ const tabProps = [
 ];
 
 class Profile extends PureComponent {
+    componentDidMount() {
+        const {
+            isMyPage,
+            uid
+        } = this.props;
+
+    }
     render() {
         const { isMyPage } =this.props;
         console.log(isMyPage);
