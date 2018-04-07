@@ -7,18 +7,14 @@
   .wrapper {
     display: flex;
     padding: 0 1rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
-  .right {
-    display: inline-block;
-    width: 60%;
+  .wrapper__right {
   }
 
-  .left {
-    margin-left: 5rem;
-    display: inline-block;
-    width: 30%;
+  .wrapper__left {
+    margin-left: 2rem;
   }
 }

@@ -7,13 +7,13 @@ const cx = classNames.bind(styles);
 const AuthorWorkCard = ({ title = null, content = null, BodyComponent, ...rest}) => (
   <div className = { cx('author-work-card') }>
     <div className = { cx('wrapper') }>
-      <div className= { cx('right') }>
+      <div className= { cx('wrapper__right') }>
         <h3>{title}</h3>
         <p>
           {content}
         </p>
       </div>
-      <div className= { cx('left') }>
+      <div className= { cx('wrapper__left') }>
         <BodyComponent {...rest} />
       </div>
     </div>

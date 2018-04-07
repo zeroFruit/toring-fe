@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 
 const FeedbackTemplate = () => (
   <div className={ cx('feed-back')}>
-      <div className= { cx('left') }>
+      <div className= { cx('feed-back__left') }>
         <section>
           <img src= { img_cheers } />
         </section>
@@ -16,7 +16,7 @@ const FeedbackTemplate = () => (
           응원하기
         </section>
       </div>
-      <div className = { cx('right') }>
+      <div className = { cx('feed-back__right') }>
         <section>
           <img src= { img_suggest } />
         </section>
