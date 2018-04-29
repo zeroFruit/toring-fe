@@ -1,13 +1,13 @@
 @import "utils";
 
 .content-tab {
-  margin-right: 1rem;
+  cursor: pointer;
 
   h2 {
     font-size: 1.5rem;
     font-weight: 300;
     text-align: left;
-    margin: .5rem;
+    margin-right: 2rem;
     color: $oc-gray-6;
   }
   .label-underline {
