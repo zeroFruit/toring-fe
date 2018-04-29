@@ -15,7 +15,8 @@ import {
     SignIn,
     SignUp,
     Upload,
-    Profile
+    Profile,
+    Writers
 } from '../../page'
 
 const cx = classNames.bind(styles);
@@ -37,6 +38,7 @@ class RootView extends PureComponent {
                                 <AuthHOC path="/works/upload" redirectPath="/works" Component={ Upload } />
                                  {/*<AuthHOC path="/works/profile" redirectPath="/works" Component={ Profile } />*/}
                                 <Route path="/works/profile" component={ Profile } />
+                                <Route path="/works/writers" component={ Writers } />
                                 <Route path="/signin" component={ SignIn } />
                                 <Route path="/signup" component={ SignUp } />
                             </Switch>
@@ -53,9 +55,3 @@ const mapDispatchToProps = dispatch => bindActionCreators({
 }, dispatch);
 
 export default connect(null, mapDispatchToProps)(RootView);
-
-
-
-
-
-

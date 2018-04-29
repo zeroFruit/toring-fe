@@ -3,7 +3,8 @@ import {
   Column,
   ContentWrapper,
   FeedbackTemplate,
-  GridCardTemplate
+  GridCardTemplate,
+  ProfileTabTemplate
 } from "../../components";
 import {
   JumboProfile,
@@ -104,7 +105,7 @@ class Profile extends PureComponent {
                 <JumboProfile />
                 <ContentWrapper>
                   <div>
-                    <ProfileTabs tabProps={ tabProps } onClick={ this.onClick }/>
+                    <ProfileTabs Tab = { ProfileTabTemplate } tabProps={ tabProps } onClick={ this.onClick }/>
                     <div>
                       {
                         this._renderCardList()

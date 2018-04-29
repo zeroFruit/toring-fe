@@ -6,7 +6,7 @@ import { GroupAreaTemplate, JumboTemplate } from "../../components";
 
 const cx = classNames.bind(styles);
 
-const JumboGroupArea = (props) => (
+const JumboGroupArea = () => (
     <JumboTemplate>
         <GroupAreaTemplate
             className={ cx('jumbo-group-area') }

@@ -12,7 +12,12 @@ import {
     CardList,
     ContentHeaderTabs
 } from "../../containers";
+import classNames from 'classnames/bind';
+import history from '../../history';
+import styles from './Works.scss';
 
+
+const cx = classNames.bind(styles);
 
 const listData = [
     {
@@ -66,7 +71,7 @@ const tabProps = [
 class Works extends PureComponent {
     render() {
         return (
-            <div>
+            <div className={ cx('works-page')}>
                 <JumboGroupArea />
                 <ContentWrapper>
                     <div>
@@ -75,6 +80,7 @@ class Works extends PureComponent {
                             <Column>
                                 <div>
                                     <WorkMainSectionTitle title="작가"/>
+                                    <DetailsButton className= {cx('details-button')} path='/works/writers'/>
                                     <CardList
                                         Card={ AuthorProfileCard }
                                         cardProps={ listData } />
@@ -96,5 +102,11 @@ class Works extends PureComponent {
         );
     }
 }
+
+const DetailsButton = ({path}) => (
+    <div onClick={ () => history.push(path)}>
+      더보기
+    </div>
+);
 
 export default Works;

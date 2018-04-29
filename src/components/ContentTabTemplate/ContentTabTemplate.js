@@ -4,9 +4,9 @@ import styles from './ContentTabTemplate.scss';
 
 const cx = classNames.bind(styles);
 
-const ContentTabTemplate = ({ label = '' }) => (
+const ContentTabTemplate = ({ label = '', underline = true }) => (
     <div className={ cx('content-tab') }>
-        <h2 className={ cx('label') }>{ label }</h2>
+        <h2 className={ underline ? cx('label-underline') : cx('label') }>{ label }</h2>
     </div>
 );
 
