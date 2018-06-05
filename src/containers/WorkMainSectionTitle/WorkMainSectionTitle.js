@@ -5,16 +5,11 @@ import { SectionTitleTemplate } from '../../components';
 
 const cx = classNames.bind(styles);
 
-class WorkMainSectionTitle extends PureComponent {
-    render() {
-        const { title } = this.props;
-        return (
-            <SectionTitleTemplate
-                title={ title }
-                className={ cx('work-main-section-title') }
-            />
-        );
-    }
-}
+const WorkMainSectionTitle = ({title}) => (
+  <SectionTitleTemplate
+      title={ title }
+      className={ cx('work-main-section-title') }
+  />
+);
 
 export default WorkMainSectionTitle;

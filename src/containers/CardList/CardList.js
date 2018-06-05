@@ -1,14 +1,11 @@
 import React, { PureComponent } from 'react';
 
-class CardList extends PureComponent {
-    render() {
-        const { Card, cardProps } = this.props;
-        return this._renderCards(Card, cardProps);
+const CardList = ({Card, cardProps}) => (
+  <div>
+    {
+      cardProps.map((prop, idx) => <Card key={idx} {...prop} />)
     }
-
-    _renderCards = (Card, cardProps) => {
-        return cardProps.map((prop, idx) => <Card key={idx} { ...prop} />);
-    }
-}
+  </div>
+);
 
 export default CardList;

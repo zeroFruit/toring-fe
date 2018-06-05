@@ -1,8 +1,14 @@
 @import "utils";
 
+
 .works-page {
+  .work-main-section-title-cover {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
   .details-button {
-    display: inline;
-    font-size: 100px;
+    font-size: 1rem;
+    padding-top: 3.5rem;
   }
 }

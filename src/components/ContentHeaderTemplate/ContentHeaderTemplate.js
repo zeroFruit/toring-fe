@@ -10,6 +10,7 @@ const ContentHeaderTemplate = ({Tab, tabProps, className = '', onClick = () => {
       tabProps.map((prop, idx) => <Tab key={idx} onClick={onClick} { ...prop} />)
     }
   </div>
+
 );
 
 export default ContentHeaderTemplate;

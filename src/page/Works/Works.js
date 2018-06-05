@@ -79,8 +79,10 @@ class Works extends PureComponent {
                         <div>
                             <Column>
                                 <div>
-                                    <WorkMainSectionTitle title="작가"/>
-                                    <DetailsButton className= {cx('details-button')} path='/works/writers'/>
+                                    <div className={cx('work-main-section-title-cover')}>
+                                        <WorkMainSectionTitle title="작가"/>
+                                        <DetailsButton className= {cx('details-button')} path='/works/writers'/>
+                                    </div>
                                     <CardList
                                         Card={ AuthorProfileCard }
                                         cardProps={ listData } />
@@ -88,7 +90,10 @@ class Works extends PureComponent {
                             </Column>
                             <Column>
                                 <div>
-                                    <WorkMainSectionTitle title="삽화가"/>
+                                    <div className={cx('work-main-section-title-cover')}>
+                                        <WorkMainSectionTitle title="삽화가"/>
+                                        <DetailsButton className= {cx('details-button')} path='/works/writers'/>
+                                    </div>
                                     <CardGrid
                                         Card={ GridCardTemplate }
                                         cardProps={ tilesData }
@@ -103,8 +108,8 @@ class Works extends PureComponent {
     }
 }
 
-const DetailsButton = ({path}) => (
-    <div onClick={ () => history.push(path)}>
+const DetailsButton = ({ path='', className='' }) => (
+    <div className={ className } onClick={ () => history.push(path)}>
       더보기
     </div>
 );
