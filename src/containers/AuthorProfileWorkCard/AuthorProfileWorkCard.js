@@ -23,12 +23,16 @@ const AuthorProfileWorkCard = ({ id = -1, img = null, label1 = '', count1 = 0, l
 
         <div className={ cx('wrapper-right') }>
           <div className={ cx('works-ongoing')}>
-            <h2 className={ cx('count') }>{ count1 }</h2>
-            <h2 className={ cx('label') }>{ label1 }</h2>
+            <h2>{ count1 }</h2>
+            <p>
+              { label1 }
+            </p>
           </div>
           <div className={ cx('works-complete')}>
-            <h2 className={ cx('count') }>{ count2 }</h2>
-            <h2 className={ cx('label') }>{ label2 }</h2>
+            <h2>{ count2 }</h2>
+            <p>
+              { label2 }
+            </p>
           </div>
         </div>
     </div>
