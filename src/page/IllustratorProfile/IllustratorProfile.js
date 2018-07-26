@@ -96,7 +96,7 @@ const listProps = [
 
 class IllustratorProfile extends PureComponent {
   state = {
-    tapProps: null
+    tapnum: null
   }
 
     render() {
@@ -118,7 +118,7 @@ class IllustratorProfile extends PureComponent {
     }
 
     _renderCardList = () => {
-      switch(this.state.tapProps) {
+      switch(this.state.tapnum) {
         case 0:
           return (<CardList
             Card={ AuthorWorkCard }
@@ -134,7 +134,7 @@ class IllustratorProfile extends PureComponent {
 
     onClick = (id) => {
       this.setState({
-        tapProps: id
+        tapnum: id
       });
     }
 }
