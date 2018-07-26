@@ -2,7 +2,6 @@
 
 .author-work-card {
   margin-bottom: 1rem;
-  width: 100%;
 
   .wrapper {
     display: flex;
@@ -11,10 +10,10 @@
     align-items: center;
   }
 
-  .wrapper__right {
+  .wrapper__left {
   }
 
-  .wrapper__left {
+  .wrapper__right {
     margin-left: 2rem;
   }
 }

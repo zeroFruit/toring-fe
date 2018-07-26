@@ -7,18 +7,17 @@ const cx = classNames.bind(styles);
 const AuthorWorkCard = ({ title = null, content = null, BodyComponent, ...rest}) => (
   <div className = { cx('author-work-card') }>
     <div className = { cx('wrapper') }>
-      <div className= { cx('wrapper__right') }>
+      <div className= { cx('wrapper__left') }>
         <h3>{title}</h3>
         <p>
           {content}
         </p>
       </div>
-      <div className= { cx('wrapper__left') }>
+      <div className= { cx('wrapper__right') }>
         <BodyComponent {...rest} />
       </div>
     </div>
   </div>
 );
-
 
 export default AuthorWorkCard;
