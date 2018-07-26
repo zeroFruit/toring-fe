@@ -15,7 +15,8 @@ import {
     SignIn,
     SignUp,
     Upload,
-    Profile,
+    WriterProfile,
+    IllustratorProfile,
     Writers
 } from '../../page'
 
@@ -37,7 +38,8 @@ class RootView extends PureComponent {
                                 <Route exact path="/works" component={ Works } />
                                 <AuthHOC path="/works/upload" redirectPath="/works" Component={ Upload } />
                                  {/*<AuthHOC path="/works/profile" redirectPath="/works" Component={ Profile } />*/}
-                                <Route path="/works/profile" component={ Profile } />
+                                <Route path="/works/profile/writer" component={ WriterProfile } />
+                                <Route path="/works/profile/illustrator" component= { IllustratorProfile } />
                                 <Route path="/works/writers" component={ Writers } />
                                 <Route path="/signin" component={ SignIn } />
                                 <Route path="/signup" component={ SignUp } />

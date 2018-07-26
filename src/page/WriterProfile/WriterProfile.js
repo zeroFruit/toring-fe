@@ -94,7 +94,7 @@ const listProps = [
   },
 ];
 
-class Profile extends PureComponent {
+class WriterProfile extends PureComponent {
   state = {
     tapProps: null
   }
@@ -125,7 +125,7 @@ class Profile extends PureComponent {
             cardProps = { listData } />);
         case 1:
           return (<HorizontalCardList
-            Card={ GridCardTemplate}
+            Card={ GridCardTemplate }
             cardProps = { listProps } />);
         default:
           return null;
@@ -139,4 +139,4 @@ class Profile extends PureComponent {
     }
 }
 
-export default Profile;
+export default WriterProfile;
