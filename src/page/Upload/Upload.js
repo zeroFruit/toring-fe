@@ -2,7 +2,7 @@ import { Map, List } from 'immutable';
 import React, { PureComponent } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Upload.scss';
-import { StepperTemplate, DropzoneTemplate } from '../../components';
+import { StepperTemplate, DropzoneTemplate, RaisedButtonTemplate, UploadContentWrapper, TermsTemplate } from '../../components';
 import { UploadButton } from '../../containers';
 
 const cx = classNames.bind(styles);
@@ -34,21 +34,76 @@ class Upload extends PureComponent {
                     steps={ steps }
                     crntStep={ currentStep }
                 />
-                <section>
-                    <DropzoneTemplate
-                        setFiles={ this._setFiles }
-                        fnm={ fd.get('work').get(0) ? fd.get('work').get(0).name : '' }
-                        fsz={ fd.get('work').get(0) ? fd.get('work').get(0).size : 0 }
-                    />
-                </section>
-                <UploadButton
-                    fd={ fd }
-                    style={ styl.upload }
-                    label="업로드하기"
-                    onClick={ this._handleUploadBtnClick }
-                />
+                <UploadContentWrapper>
+                {
+                  this._renderUploadStep()
+                }
+                </UploadContentWrapper>
+                <div style={styl.center}>
+                  <RaisedButtonTemplate label="이전" style={ styl.prevnext } onClick={this._prevPageSet}/>
+                  <RaisedButtonTemplate label="다음" style={ styl.prevnext } onClick={this._nextPageSet}/>
+                </div>
             </div>
         );
+    }
+
+    _renderUploadStep = () => {
+      const { fd, currentStep } = this.state;
+
+      switch(currentStep) {
+        case 0:
+          return (
+            <div>
+              <TermsTemplate title="규정" content={ fd.get('title') } />
+              <TermsTemplate title="규정" content={ fd.get('content') } />
+            </div>
+          );
+        case 1:
+          return (
+              <div>
+                <section>
+                  <DropzoneTemplate
+                      setFiles={ this._setFiles }
+                      fnm={ fd.get('work').get(0) ? fd.get('work').get(0).name : '' }
+                      fsz={ fd.get('work').get(0) ? fd.get('work').get(0).size : 0 }
+                  />
+                </section>
+                <UploadButton
+                  fd={ fd }
+                  style={ styl.upload }
+                  label="업로드하기"
+                  onClick={ this._handleUploadBtnClick }
+                />
+              </div>
+            );
+          case 2:
+            return (
+              <div style={styl.center}>
+                작업실에서 심사 진행 사항을 확인할 수 있습니다<br/>
+                심사가 완료될 때까지 기다려주세요.<br/>
+                심사가 완료되면 다른 사람에게 보여지게 됩니다.
+              </div>
+            )
+          default:
+            return <div></div>;
+        }
+    }
+
+
+    _prevPageSet = () => {
+      if (this.state.currentStep == 0) {
+        return;
+      }
+
+      this.setState({currentStep : this.state.currentStep - 1})
+    }
+
+    _nextPageSet = () => {
+      if (this.state.currentStep == 3) {
+        return;
+      }
+
+      this.setState({currentStep : this.state.currentStep + 1})
     }
 
     _setFiles = (work) => this.setState({ fd: this.state.fd.set('work', List(work)) });
@@ -58,6 +113,7 @@ class Upload extends PureComponent {
 
 const styl = {
     upload: {
+        width: '100%',
         backgroundColor: '#868e96',
         color: 'white',
         margin: '0 auto',
@@ -65,6 +121,20 @@ const styl = {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: '0.8rem'
+    },
+
+    prevnext: {
+        backgroundColor: '#868e96',
+        color: 'white',
+        margin: '3rem',
+        fontSize: '0.8rem'
+    },
+
+    center: {
+      width: '100%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
     }
 }
 

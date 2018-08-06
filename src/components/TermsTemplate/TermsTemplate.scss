@@ -1,0 +1,12 @@
+.terms {
+  title {
+    font-size: 2rem;
+  }
+
+  textarea:disabled {
+    border: solid 1px #979797;
+    width: 100%;
+    height: 16rem;
+    background: #ffffff;
+  }
+}

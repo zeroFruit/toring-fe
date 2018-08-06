@@ -36,7 +36,7 @@ class RootView extends PureComponent {
                             <Switch>
                                 <Route exact path="/" component={ Home } />
                                 <Route exact path="/works" component={ Works } />
-                                <AuthHOC path="/works/upload" redirectPath="/works" Component={ Upload } />
+                                <Route path="/works/upload" component={ Upload } />
                                  {/*<AuthHOC path="/works/profile" redirectPath="/works" Component={ Profile } />*/}
                                 <Route path="/works/profile/writer" component={ WriterProfile } />
                                 <Route path="/works/profile/illustrator" component= { IllustratorProfile } />
