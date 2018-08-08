@@ -1,5 +1,5 @@
-export * from './Home/index';
-export * from './Works/index';
+export * from './Home';
+export * from './Works';
 export * from './SignIn';
 export * from './SignUp';
 export * from './Upload';

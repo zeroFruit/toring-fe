@@ -28,7 +28,7 @@ const getResponse = res => {
 
 export const Auth = {
     signup: async ({ username, email, password }) => {
-        const res = await requests.post(URL, '/user', {
+        const res = await requests.post(URL, '/signup', {
             username, email, password
         });
         return res;

@@ -4,8 +4,8 @@ import classNames from 'classnames/bind';
 import RaisedButton from 'material-ui/RaisedButton';
 import _styles from './SignUpForm.scss';
 import { MaterialUIComponent } from '../../components';
-import { TradeFormTextField, TradeTabs } from '../index';
-import { SignUpHOC, LoaderHOC } from "../../hocs";
+import { TradeFormTextField } from '../index';
+import { LoaderHOC } from "../../hocs";
 
 const cx = classNames.bind(_styles);
 
@@ -67,4 +67,4 @@ const styles = {
     }
 }
 
-export default compose(SignUpHOC, LoaderHOC)(SignUpForm);
+export default compose(LoaderHOC)(SignUpForm);

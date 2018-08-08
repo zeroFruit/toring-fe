@@ -31,6 +31,7 @@ const slideProps = [
     }
 ];
 
+<<<<<<< HEAD
 const tabProps = [
     {
         label: '추천',
@@ -100,6 +101,8 @@ const listProps = [
     },
 ];
 
+=======
+>>>>>>> e827d341c4faa80fada903b29bb13b62f1b0bd2e
 class Home extends PureComponent {
     render() {
         return (
@@ -107,6 +110,7 @@ class Home extends PureComponent {
                 <JumboGroupSlide
                     Slide={ null }
                     slideProps={ slideProps } />
+<<<<<<< HEAD
                 <ContentWrapper>
                     <div>
                         <ContentHeaderTabs tabProps={ tabProps } />
@@ -144,6 +148,8 @@ class Home extends PureComponent {
                         </div>
                     </div>
                 </ContentWrapper>
+=======
+>>>>>>> e827d341c4faa80fada903b29bb13b62f1b0bd2e
             </div>
         );
     }

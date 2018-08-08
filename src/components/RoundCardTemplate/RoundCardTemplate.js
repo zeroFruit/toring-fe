@@ -6,7 +6,7 @@ const cx = classNames.bind(styles);
 
 const RoundCardTemplate = ({ className = '', img = null }) => (
     <div className={ cx('round-card', className) }>
-        <img src={ img } />
+        <img src={ img } alt={"round card template"} />
     </div>
 );
 

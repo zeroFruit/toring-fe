@@ -1,10 +1,7 @@
-export * from './RootView';
-export * from './PriceTable';
 export * from './HeaderTabs';
 export * from './TradeForm';
 export * from './TradeFormTextField';
 export * from './TradeTabs';
-export * from './DepthTable';
 export * from './SignInForm';
 export * from './HeaderNavBar';
 export * from './HeaderButtonTabs';
@@ -20,3 +17,6 @@ export * from './JumboProfile';
 export * from './ProfileTabs';
 export * from './ContentHeaderTabs';
 export * from './HorizontalCardList';
+export * from './SignUpService';
+export * from './SignInService';
+export * from './SignOutService';
