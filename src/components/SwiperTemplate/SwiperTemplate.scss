@@ -1,0 +1,11 @@
+@import 'utils';
+
+.swiper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: $oc-gray-3;
+  width: 100%;
+}

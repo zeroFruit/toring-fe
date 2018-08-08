@@ -1,0 +1,66 @@
+@import "utils";
+
+.swiper-viewer {
+  position: relative;
+
+  .swiper-viewer-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 0.5rem;
+    }
+  }
+
+  .slick-center {
+    transition: height 1s;
+
+    img {
+      height: 100vh;
+      width: 100vw;
+    }
+  }
+
+  .slick-slider {
+    display: flex !important;
+  }
+
+  .slick-list {
+    padding: 0 !important;
+  }
+
+  .slick-active {
+    flex: 1 !important;
+  }
+
+  .prev-btn {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    left: 40%;
+    top: 80%;
+    z-index: 5;
+    font-size: 4rem;
+    color: $oc-gray-0;
+  }
+
+  .next-btn {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 40%;
+    top: 80%;
+    z-index: 5;
+    font-size: 4rem;
+    color: $oc-gray-0;
+  }
+}
+
+.swiper-viewer:hover .prev-btn {
+  display: block;
+}
+
+.swiper-viewer:hover .next-btn {
+  display: block;
+}

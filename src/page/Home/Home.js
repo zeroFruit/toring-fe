@@ -2,7 +2,8 @@ import React, { PureComponent } from 'react';
 import { JumboGroupSlide } from "../../containers";
 import {
     ContentWrapper,
-    GridCardTemplate
+    GridCardTemplate,
+    SwiperViewer
 } from '../../components';
 import {
     HorizontalCardList,
@@ -46,7 +47,7 @@ const tabProps = [
 ];
 
 const ListTitle = ({ title }) => (
-    <div>{ title }</div>
+    <div style={ { fontSize: '1.5rem', color: '#868e96' }}>{ title }</div>
 );
 
 const CardBody = ({ title, author, rate }) => (

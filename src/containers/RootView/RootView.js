@@ -5,7 +5,7 @@ import { Router, Route, Switch } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './RootView.scss';
 import history from '../../history';
-import { ViewTemplate } from '../../components';
+import { ViewTemplate, SwiperViewer } from '../../components';
 import { HeaderNavBar } from '../../containers';
 import { AuthHOC } from '../../hocs';
 import { actions } from '../../reducers/ws';
@@ -43,6 +43,7 @@ class RootView extends PureComponent {
                                 <Route path="/works/writers" component={ Writers } />
                                 <Route path="/signin" component={ SignIn } />
                                 <Route path="/signup" component={ SignUp } />
+                                <Route path="/posts" component={ SwiperViewer } />
                             </Switch>
                         </div>
                     </div>

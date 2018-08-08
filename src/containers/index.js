@@ -22,3 +22,4 @@ export * from './ContentHeaderTabs';
 export * from './HorizontalCardList';
 export * from './AuthorWorkCard';
 export * from './AuthorProfileWorkCard';
+export * from './FeedbackTemplate';

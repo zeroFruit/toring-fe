@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import {
   Column,
   ContentWrapper,
-  FeedbackTemplate,
   GridCardTemplate,
   ProfileTabTemplate
 } from "../../components";
@@ -11,7 +10,8 @@ import {
   ProfileTabs,
   AuthorWorkCard,
   CardList,
-  HorizontalCardList
+  HorizontalCardList,
+  FeedbackTemplate
 } from "../../containers";
 
 
