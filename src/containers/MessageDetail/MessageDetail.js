@@ -34,7 +34,7 @@ class MessageDetail extends PureComponent {
                         <MessageDetailCount />
                     </div>
                 </header>
-                <div className={cx('container')}>
+                <div className={cx('message-detail__container')}>
                     <div className={cx('title')}>
                         { this.state.title }
                     </div>

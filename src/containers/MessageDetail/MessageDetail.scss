@@ -4,10 +4,10 @@
 
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between!important;
     align-items: center;
-    padding: 0 0 0 1.625rem;
-    height: 3.625rem;
+    padding: 0 0 0 1.625rem!important;
+    height: 3.625rem!important;
 
     .profile {
       display: flex;
@@ -30,7 +30,7 @@
     }
   }
 
-  .container {
+  &__container {
     display: flex;
     flex-direction: column;
     padding: 0;

@@ -18,3 +18,5 @@ export * from './JumboTemplate';
 export * from './ContentHeaderTemplate';
 export * from './ProfileTabTemplate';
 export * from './ContentTabTemplate';
+export * from './ModalTemplate';
+export * from './TextAreaTemplate';

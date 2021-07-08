@@ -11,4 +11,4 @@ const UploadButton = ({ style, label, onClick }) => (
     />
 );
 
-export default compose(UploadWorkHOC)(UploadButton);
+export default UploadButton;

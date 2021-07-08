@@ -1,6 +1,11 @@
 import React, { PureComponent } from 'react';
 import { ContentWrapper } from '../../components';
-import { JumboProfile, ProfileTabs } from '../../containers';
+import {
+    JumboProfile,
+    ProfileTabs,
+    ShowMessageButtonService,
+    MessageModalContent
+} from '../../containers';
 
 const tabProps = [
     {
@@ -14,15 +19,37 @@ const tabProps = [
 ];
 
 class Profile extends PureComponent {
+    componentDidMount() {
+        const {
+            isMyPage,
+            uid
+        } = this.props;
+
+    }
     render() {
+        const { isMyPage } =this.props;
+        console.log(isMyPage);
         return (
             <div>
-                <JumboProfile />
+                <ShowMessageButtonService
+                    maybeRenderModal={
+                        this.props.maybeRenderModal.bind(this, MessageModalContent, {
+                            sendMessage: this._sendMessage,
+                        })
+                    }
+                    render={() => (
+                        <JumboProfile />
+                    )}
+                />
                 <ContentWrapper>
                     <ProfileTabs tabProps={ tabProps } />
                 </ContentWrapper>
             </div>
         );
+    }
+
+    _sendMessage = () => {
+        console.log('send message');
     }
 }
 

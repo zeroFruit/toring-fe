@@ -1,0 +1,11 @@
+
+.message-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 99;
+
+  .message-btn {
+    margin-left: 1rem;
+  }
+}
